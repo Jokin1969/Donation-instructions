@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e8f4f8 0%, #d1ecf1 100%);
+  min-height: 100vh;
+  color: #2c3e50;
+}
+
+header {
+  background: linear-gradient(90deg, #0077b6, #00b4d8);
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+header .logo {
+  font-size: 2rem;
+}
+
+header h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+header p {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  margin-top: 2px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.intro-box {
+  background: white;
+  border-radius: 16px;
+  padding: 30px 36px;
+  margin-bottom: 36px;
+  box-shadow: 0 4px 20px rgba(0,119,182,0.08);
+  border-left: 5px solid #0077b6;
+}
+
+.intro-box h2 {
+  font-size: 1.3rem;
+  color: #0077b6;
+  margin-bottom: 12px;
+}
+
+.intro-box p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4a5568;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  border: 2px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,119,182,0.18);
+  border-color: #00b4d8;
+}
+
+.card .icon {
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0077b6;
+}
+
+.card p {
+  font-size: 0.88rem;
+  color: #718096;
+  line-height: 1.5;
+}
+
+.card .btn {
+  margin-top: 8px;
+  background: linear-gradient(90deg, #0077b6, #00b4d8);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.card .btn:hover {
+  opacity: 0.88;
+}
+
+/* Instruction pages */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 28px;
+  font-size: 0.95rem;
+  transition: gap 0.2s;
+}
+
+.back-link:hover {
+  gap: 10px;
+}
+
+.instruction-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+}
+
+.instruction-card .page-icon {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.instruction-card h2 {
+  font-size: 1.6rem;
+  color: #0077b6;
+  margin-bottom: 24px;
+  text-align: center;
+  border-bottom: 2px solid #e8f4f8;
+  padding-bottom: 16px;
+}
+
+.instruction-content {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #4a5568;
+}
+
+.instruction-content p {
+  margin-bottom: 16px;
+}
+
+.instruction-content ol,
+.instruction-content ul {
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.instruction-content li {
+  margin-bottom: 10px;
+}
+
+.instruction-content .highlight {
+  background: #e8f4f8;
+  border-left: 4px solid #0077b6;
+  padding: 14px 18px;
+  border-radius: 0 8px 8px 0;
+  margin: 20px 0;
+  font-weight: 500;
+  color: #0077b6;
+}
+
+.placeholder-text {
+  background: #f7fafc;
+  border: 2px dashed #cbd5e0;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  color: #a0aec0;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #718096;
+  font-size: 0.82rem;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 16px 20px;
+  }
+  header h1 {
+    font-size: 1.1rem;
+  }
+  .intro-box {
+    padding: 22px 20px;
+  }
+  .instruction-card {
+    padding: 24px 18px;
+  }
+}
