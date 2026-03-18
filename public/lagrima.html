@@ -5,9 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recogida de Lágrima | Instrucciones</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .section-title {
+      font-size: 1.1rem; font-weight: 700; color: #0077b6;
+      margin: 28px 0 12px; display: flex; align-items: center; gap: 10px;
+    }
+    .section-title::after {
+      content: ''; flex: 1; height: 2px;
+      background: linear-gradient(90deg, #00b4d8, transparent); border-radius: 2px;
+    }
+    .alert-box {
+      background: #fff8e1; border-left: 5px solid #f59e0b;
+      border-radius: 0 10px 10px 0; padding: 14px 18px; margin: 16px 0;
+      color: #92400e; font-size: 0.93rem; line-height: 1.65;
+    }
+    .alert-box strong { display: block; margin-bottom: 4px; }
+    .steps { display: flex; flex-direction: column; gap: 14px; }
+    .step { display: flex; gap: 14px; align-items: flex-start;
+      background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; }
+    .step-num {
+      background: linear-gradient(135deg, #0077b6, #00b4d8); color: white;
+      font-weight: 700; font-size: 1rem; width: 34px; height: 34px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .step-body { font-size: 0.93rem; line-height: 1.7; color: #2d3748; flex: 1; }
+    .tip-box {
+      background: #ecfdf5; border-left: 5px solid #10b981;
+      border-radius: 0 10px 10px 0; padding: 12px 16px; margin-top: 10px;
+      color: #064e3b; font-size: 0.9rem; line-height: 1.6;
+    }
+    .illustration { text-align: center; margin: 16px 0; }
+    .illustration figcaption { font-size: 0.82rem; color: #718096; margin-top: 6px; font-style: italic; }
+    .kit-grid { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 20px 0; }
+    .kit-item { text-align: center; font-size: 0.82rem; color: #4a5568; }
+    .kit-item svg { display: block; margin: 0 auto 6px; }
+    .qr-box {
+      background: #f5f3ff; border: 2px dashed #a78bfa; border-radius: 12px;
+      padding: 20px; text-align: center; margin-top: 24px; color: #5b21b6;
+    }
+    .qr-box p { font-size: 0.9rem; margin-top: 8px; }
+  </style>
 </head>
 <body>
-
   <header>
     <div class="logo">🧪</div>
     <div>
@@ -18,22 +57,167 @@
 
   <div class="container">
     <a class="back-link" href="/">&#8592; Volver al inicio</a>
-
     <div class="instruction-card">
-      <div class="page-icon">👁️</div>
+
+      <!-- Ilustración principal -->
+      <figure class="illustration">
+        <svg width="220" height="160" viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg">
+          <!-- Ojo -->
+          <ellipse cx="110" cy="72" rx="72" ry="40" fill="white" stroke="#94a3b8" stroke-width="2"/>
+          <!-- Iris -->
+          <circle cx="110" cy="72" r="24" fill="#60a5fa" opacity="0.8"/>
+          <circle cx="110" cy="72" r="14" fill="#1e40af"/>
+          <circle cx="110" cy="72" r="7" fill="#0f172a"/>
+          <!-- Brillo -->
+          <circle cx="116" cy="66" r="4" fill="white" opacity="0.9"/>
+          <!-- Párpado superior -->
+          <path d="M38 72 Q110 20 182 72" stroke="#475569" stroke-width="2.5" fill="none"/>
+          <!-- Párpado inferior -->
+          <path d="M38 72 Q110 108 182 72" stroke="#475569" stroke-width="2.5" fill="none"/>
+          <!-- Tira de papel adsorbente bajo párpado -->
+          <rect x="130" y="88" width="6" height="38" rx="3" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5" transform="rotate(-10 133 107)"/>
+          <!-- Indicador de colocación -->
+          <line x1="148" y1="102" x2="168" y2="115" stroke="#0077b6" stroke-width="1.5" stroke-dasharray="3,2"/>
+          <text x="170" y="119" font-size="10" fill="#0077b6" font-family="sans-serif">tira</text>
+          <!-- Pestañas superiores -->
+          <line x1="75" y1="38" x2="72" y2="26" stroke="#475569" stroke-width="1.5"/>
+          <line x1="90" y1="30" x2="89" y2="18" stroke="#475569" stroke-width="1.5"/>
+          <line x1="110" y1="26" x2="110" y2="14" stroke="#475569" stroke-width="1.5"/>
+          <line x1="130" y1="30" x2="131" y2="18" stroke="#475569" stroke-width="1.5"/>
+          <line x1="145" y1="38" x2="148" y2="26" stroke="#475569" stroke-width="1.5"/>
+          <!-- Lágrimas -->
+          <path d="M44 80 Q40 88 44 94 Q48 88 44 80 Z" fill="#93c5fd" opacity="0.7"/>
+        </svg>
+        <figcaption>Colocación de la tira adsorbente bajo el párpado inferior, cerca del rabillo</figcaption>
+      </figure>
+
       <h2>Recogida de Lágrima</h2>
 
       <div class="instruction-content">
-        <div class="placeholder-text">
-          Las instrucciones detalladas para la recogida de lágrima se añadirán aquí próximamente.
+
+        <!-- Material incluido -->
+        <div class="section-title">📋 Material incluido en el paquete</div>
+        <div class="kit-grid">
+          <div class="kit-item">
+            <svg width="50" height="70" viewBox="0 0 50 70" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="5" width="30" height="60" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+              <rect x="14" y="10" width="22" height="8" rx="2" fill="#fde68a"/>
+              <line x1="14" y1="24" x2="36" y2="24" stroke="#d97706" stroke-width="1"/>
+              <line x1="14" y1="30" x2="36" y2="30" stroke="#d97706" stroke-width="1"/>
+            </svg>
+            2 tiras adsorbentes<br/>(en sobres)
+          </div>
+          <div class="kit-item">
+            <svg width="40" height="80" viewBox="0 0 40 80" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="10" width="20" height="58" rx="5" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="1.5"/>
+              <rect x="8" y="5" width="24" height="12" rx="4" fill="#0ea5e9"/>
+              <rect x="12" y="40" width="16" height="26" rx="0 0 4 4" fill="#bae6fd" opacity="0.7"/>
+            </svg>
+            2 tubos con tapa<br/>de rosca
+          </div>
+          <div class="kit-item">
+            <svg width="60" height="70" viewBox="0 0 60 70" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 15 L20 5 L55 40 L40 50 Z" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+              <path d="M5 15 L8 18 L43 53 L40 50 Z" fill="#bbf7d0"/>
+              <circle cx="47" cy="43" r="5" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+            </svg>
+            Par de guantes<br/>de látex
+          </div>
         </div>
+
+        <div class="alert-box">
+          <strong>⚠️ Antes de empezar</strong>
+          La recogida debe hacerse <strong>sin ningún maquillaje en los ojos</strong>, ya que podría contaminar la muestra. Si tiene inflamación o úlcera en la córnea, no realice esta recogida y consulte al equipo.
+        </div>
+
+        <div class="section-title">✅ Instrucciones paso a paso</div>
+        <div class="steps">
+
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              Póngase los <strong>guantes de látex</strong> antes de abrir los sobres que contienen las tiras de papel adsorbente.
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              Con los guantes puestos, abra uno de los sobres y haga una <strong>pequeña doblez en el extremo redondeado</strong> de la tira. Evite manosearla; sujétela por la parte inferior.
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              Eche la cabeza <strong>ligeramente hacia atrás</strong>, mire hacia arriba y tire suavemente del párpado inferior hacia abajo. Coloque la parte doblada de la tira <strong>debajo del párpado, hacia el rabillo del ojo</strong> (molesta menos cerca del rabillo que del lagrimal).
+              <figure class="illustration" style="margin-top:12px;">
+                <svg width="180" height="100" viewBox="0 0 180 100" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Ojo desde abajo mostrando párpado inferior bajado -->
+                  <ellipse cx="90" cy="45" rx="60" ry="32" fill="white" stroke="#94a3b8" stroke-width="1.5"/>
+                  <circle cx="90" cy="45" r="18" fill="#93c5fd" opacity="0.7"/>
+                  <circle cx="90" cy="45" r="10" fill="#1e40af"/>
+                  <path d="M30 45 Q90 85 150 45" stroke="#475569" stroke-width="2.5" fill="none"/>
+                  <path d="M30 45 Q90 20 150 45" stroke="#475569" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity="0.5"/>
+                  <!-- Párpado inferior bajado -->
+                  <path d="M50 60 Q90 90 130 60" stroke="#475569" stroke-width="2" fill="#fde8d8" fill-opacity="0.3"/>
+                  <!-- Tira en posición -->
+                  <rect x="110" y="68" width="5" height="22" rx="2.5" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.2" transform="rotate(-15 112 79)"/>
+                  <text x="118" y="85" font-size="9" fill="#0077b6" font-family="sans-serif">↑ rabillo</text>
+                </svg>
+                <figcaption>Párpado inferior bajado — tira colocada hacia el rabillo</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              Una vez colocada, puede <strong>cerrar el ojo o mantenerlo abierto</strong>, parpadeando suavemente para que la tira no se caiga mientras se empapa de fluido lagrimal.
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">5</div>
+            <div class="step-body">
+              Mantenga la tira en el ojo hasta que se haya <strong>empapado completamente o durante aproximadamente 5 minutos</strong>.
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">6</div>
+            <div class="step-body">
+              Retire la tira suavemente agarrándola por el extremo inferior e introdúzcala en el <strong>tubo de plástico</strong> (dóblela si es necesario para que entre del todo). Cierre bien la tapa.
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">7</div>
+            <div class="step-body">
+              Repita la misma operación con la <strong>segunda tira en el otro ojo</strong>.
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">8</div>
+            <div class="step-body">
+              Una vez guardadas las dos tiras en sus tubos, deseche los guantes y meta los tubos cerrados en el <strong>congelador</strong>. Manténgalos congelados hasta el envío.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- QR para vídeo -->
+        <div class="qr-box">
+          <div style="font-size: 2rem;">📱</div>
+          <p><strong>¿Necesita un ejemplo visual?</strong><br/>
+          Escanee el código QR incluido en el documento en papel del paquete para ver un vídeo explicativo del proceso.</p>
+        </div>
+
       </div>
     </div>
   </div>
 
-  <footer>
-    &copy; 2026 &mdash; Instrucciones de Recogida de Muestras para Donantes
-  </footer>
-
+  <footer>&copy; 2026 &mdash; Instrucciones de Recogida de Muestras para Donantes</footer>
 </body>
 </html>

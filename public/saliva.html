@@ -5,9 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recogida de Saliva | Instrucciones</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .section-title {
+      font-size: 1.1rem; font-weight: 700; color: #0077b6;
+      margin: 28px 0 12px; display: flex; align-items: center; gap: 10px;
+    }
+    .section-title::after {
+      content: ''; flex: 1; height: 2px;
+      background: linear-gradient(90deg, #00b4d8, transparent); border-radius: 2px;
+    }
+    .alert-box {
+      background: #fff8e1; border-left: 5px solid #f59e0b;
+      border-radius: 0 10px 10px 0; padding: 14px 18px; margin: 16px 0;
+      color: #92400e; font-size: 0.93rem; line-height: 1.65;
+    }
+    .alert-box strong { display: block; margin-bottom: 4px; }
+    .steps { display: flex; flex-direction: column; gap: 14px; }
+    .step { display: flex; gap: 14px; align-items: flex-start;
+      background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; }
+    .step-num {
+      background: linear-gradient(135deg, #0077b6, #00b4d8); color: white;
+      font-weight: 700; font-size: 1rem; width: 34px; height: 34px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .step-body { font-size: 0.93rem; line-height: 1.7; color: #2d3748; flex: 1; }
+    .tip-box {
+      background: #ecfdf5; border-left: 5px solid #10b981;
+      border-radius: 0 10px 10px 0; padding: 12px 16px; margin-top: 10px;
+      color: #064e3b; font-size: 0.9rem; line-height: 1.6;
+    }
+    .illustration { text-align: center; margin: 16px 0; }
+    .illustration figcaption { font-size: 0.82rem; color: #718096; margin-top: 6px; font-style: italic; }
+    .parts-grid { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 16px 0; }
+    .part-item { text-align: center; font-size: 0.8rem; color: #4a5568; max-width: 80px; }
+    .part-item svg { display: block; margin: 0 auto 4px; }
+    .note-box {
+      background: #ecfdf5; border-left: 5px solid #10b981;
+      border-radius: 0 10px 10px 0; padding: 14px 18px; margin-top: 16px;
+      color: #064e3b; font-size: 0.9rem; line-height: 1.6;
+    }
+    .note-box strong { display: block; margin-bottom: 4px; }
+  </style>
 </head>
 <body>
-
   <header>
     <div class="logo">🧪</div>
     <div>
@@ -18,22 +58,139 @@
 
   <div class="container">
     <a class="back-link" href="/">&#8592; Volver al inicio</a>
-
     <div class="instruction-card">
-      <div class="page-icon">💧</div>
+
+      <!-- Ilustración principal: tubo de saliva Oragene -->
+      <figure class="illustration">
+        <svg width="200" height="260" viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg">
+          <!-- Tubo principal -->
+          <rect x="70" y="90" width="50" height="130" rx="6" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+          <!-- Líquido/saliva dentro -->
+          <rect x="72" y="160" width="46" height="58" rx="0 0 5 5" fill="#bae6fd" opacity="0.7"/>
+          <!-- Línea FILL TO -->
+          <line x1="72" y1="158" x2="118" y2="158" stroke="#0077b6" stroke-width="2.5" stroke-dasharray="5,3"/>
+          <text x="122" y="162" font-size="9" fill="#0077b6" font-family="sans-serif" font-weight="bold">FILL TO</text>
+          <!-- Boquilla ancha -->
+          <rect x="55" y="52" width="80" height="44" rx="10" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2"/>
+          <ellipse cx="95" cy="52" rx="40" ry="10" fill="#bae6fd" stroke="#0ea5e9" stroke-width="1.5"/>
+          <!-- Depósito de líquido en boquilla -->
+          <rect x="68" y="56" width="24" height="16" rx="4" fill="#7dd3fc" opacity="0.8"/>
+          <text x="62" y="68" font-size="7.5" fill="#0369a1" font-family="sans-serif">depósito</text>
+          <!-- Tapa boquilla (cierre plástico) -->
+          <rect x="55" y="42" width="80" height="14" rx="6" fill="#0ea5e9" opacity="0.5" stroke="#0284c7" stroke-width="1"/>
+          <!-- Tapón suelto -->
+          <rect x="135" y="92" width="28" height="16" rx="5" fill="#0077b6"/>
+          <text x="124" y="88" font-size="8" fill="#64748b" font-family="sans-serif">tapón</text>
+          <line x1="149" y1="92" x2="121" y2="92" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,2"/>
+          <!-- Etiqueta en el tubo -->
+          <rect x="74" y="110" width="42" height="28" rx="3" fill="white" stroke="#cbd5e0" stroke-width="1.2"/>
+          <line x1="78" y1="118" x2="112" y2="118" stroke="#9ca3af" stroke-width="1"/>
+          <line x1="78" y1="124" x2="108" y2="124" stroke="#9ca3af" stroke-width="1"/>
+          <line x1="78" y1="130" x2="100" y2="130" stroke="#9ca3af" stroke-width="1"/>
+          <!-- Brillo tubo -->
+          <line x1="76" y1="100" x2="76" y2="215" stroke="white" stroke-width="2.5" opacity="0.4"/>
+        </svg>
+        <figcaption>Kit de recogida de saliva — llenar hasta la línea "FILL TO"</figcaption>
+      </figure>
+
       <h2>Recogida de Saliva</h2>
 
       <div class="instruction-content">
-        <div class="placeholder-text">
-          Las instrucciones detalladas para la recogida de saliva se añadirán aquí próximamente.
+        <p>En el paquete encontrará una <strong>cajita de plástico</strong> con un tubo de recolección con boquilla ancha y un depósito de líquido adjunto, más un tapón suelto para el cierre final. Con esta saliva se extraerá posteriormente su <strong>ADN</strong>.</p>
+
+        <div class="alert-box">
+          <strong>⚠️ Antes de empezar</strong>
+          <ul style="margin: 6px 0 0 18px; padding: 0;">
+            <li>No coma, beba, fume ni mastique chicle al menos <strong>30 minutos antes</strong>. Las partículas o químicos pueden dificultar la extracción del ADN.</li>
+            <li><strong>No retire</strong> el cierre de plástico de la tapa de la boquilla antes de usarlo para no perder el líquido interior.</li>
+          </ul>
+        </div>
+
+        <div class="section-title">✅ Instrucciones paso a paso</div>
+        <p style="font-size:0.88rem; color:#718096; margin-bottom:14px;">El proceso puede llevar entre 2 y 5 minutos según cada persona.</p>
+
+        <div class="steps">
+
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              Saque el tubo de recolección con la boquilla acoplada de la caja de plástico. <strong>Agarre siempre por el tubo</strong>, no por la boquilla, para evitar contaminarla.
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              Acumule saliva en la boca durante unos segundos y vaya <strong>escupiéndola en la boquilla</strong> hasta que la saliva (el líquido, <em>no las burbujas</em>) alcance la <strong>línea de llenado</strong> marcada en el tubo ("FILL TO").
+              <figure class="illustration" style="margin-top:12px;">
+                <svg width="120" height="90" viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="40" y="10" width="36" height="72" rx="5" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="1.5"/>
+                  <rect x="42" y="48" width="32" height="32" rx="0 0 4 4" fill="#bae6fd" opacity="0.8"/>
+                  <!-- burbujas -->
+                  <circle cx="52" cy="44" r="3" fill="none" stroke="#93c5fd" stroke-width="1.2"/>
+                  <circle cx="60" cy="40" r="2" fill="none" stroke="#93c5fd" stroke-width="1.2"/>
+                  <circle cx="68" cy="43" r="2.5" fill="none" stroke="#93c5fd" stroke-width="1.2"/>
+                  <line x1="42" y1="46" x2="76" y2="46" stroke="#0077b6" stroke-width="2" stroke-dasharray="4,2"/>
+                  <text x="80" y="50" font-size="8" fill="#0077b6" font-family="sans-serif" font-weight="bold">← línea</text>
+                  <text x="2" y="44" font-size="7.5" fill="#64748b" font-family="sans-serif">líquido ↑</text>
+                  <text x="2" y="34" font-size="7.5" fill="#94a3b8" font-family="sans-serif">burbujas</text>
+                  <text x="2" y="22" font-size="7.5" fill="#94a3b8" font-family="sans-serif">(no cuentan)</text>
+                </svg>
+                <figcaption>Sólo cuenta el líquido, no las burbujas</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              Mantenga el tubo <strong>en posición vertical</strong> y, con la otra mano, cierre la tapa de la boquilla presionándola hasta escuchar un <strong>"clic"</strong>.
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              Manteniendo el tubo vertical, <strong>desenrosque la boquilla</strong> (con la tapa ya cerrada) y deséchela directamente a la basura.
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">5</div>
+            <div class="step-body">
+              Utilice el <strong>tapón pequeño suelto</strong> para cerrar firmemente el tubo, sin tocar la boca del tubo directamente con las manos.
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">6</div>
+            <div class="step-body">
+              Con el tubo bien cerrado, <strong>agítelo durante 5–10 segundos</strong> para que se mezclen bien la saliva y el líquido de la tapa.
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">7</div>
+            <div class="step-body">
+              Pegue la <strong>etiqueta autoadhesiva</strong> (incluida en la documentación) con su nombre, código de barras y código del Biobanco sobre el tubo. Vuelva a colocar el tubo en su cajita de plástico original.
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">8</div>
+            <div class="step-body">
+              Meta la caja de plástico en el <strong>sobre acolchado pequeño</strong> (ya viene con la etiqueta de destino a la atención de África Manero) y consérvela a <strong>temperatura ambiente</strong> hasta la recogida. No hace falta refrigerar esta muestra.
+              <div class="tip-box" style="margin-top:10px;">
+                📌 <strong>Envío conjunto (varios familiares):</strong> Si han recibido varios kits, meta todas las cajitas en un sobre acolchado grande o en la misma caja en la que las recibieron, usando la etiqueta grande de destino incluida a la atención de África Manero.
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
 
-  <footer>
-    &copy; 2026 &mdash; Instrucciones de Recogida de Muestras para Donantes
-  </footer>
-
+  <footer>&copy; 2026 &mdash; Instrucciones de Recogida de Muestras para Donantes</footer>
 </body>
 </html>

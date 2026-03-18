@@ -5,9 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recogida de Orina | Instrucciones</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .section-title {
+      font-size: 1.1rem; font-weight: 700; color: #0077b6;
+      margin: 28px 0 12px; display: flex; align-items: center; gap: 10px;
+    }
+    .section-title::after {
+      content: ''; flex: 1; height: 2px;
+      background: linear-gradient(90deg, #00b4d8, transparent); border-radius: 2px;
+    }
+    .alert-box {
+      background: #fff8e1; border-left: 5px solid #f59e0b;
+      border-radius: 0 10px 10px 0; padding: 14px 18px; margin: 16px 0;
+      color: #92400e; font-size: 0.93rem; line-height: 1.65;
+    }
+    .alert-box strong { display: block; margin-bottom: 4px; }
+    .steps { display: flex; flex-direction: column; gap: 14px; margin-top: 4px; }
+    .step { display: flex; gap: 14px; align-items: flex-start;
+      background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; }
+    .step-num {
+      background: linear-gradient(135deg, #0077b6, #00b4d8); color: white;
+      font-weight: 700; font-size: 1rem; width: 34px; height: 34px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .step-body { font-size: 0.93rem; line-height: 1.7; color: #2d3748; flex: 1; }
+    .tip-box {
+      background: #ecfdf5; border-left: 5px solid #10b981;
+      border-radius: 0 10px 10px 0; padding: 12px 16px; margin-top: 12px;
+      color: #064e3b; font-size: 0.9rem; line-height: 1.6;
+    }
+    .illustration { text-align: center; margin: 24px 0; }
+    .illustration svg { max-width: 100%; }
+    .illustration figcaption {
+      font-size: 0.82rem; color: #718096; margin-top: 8px; font-style: italic;
+    }
+  </style>
 </head>
 <body>
-
   <header>
     <div class="logo">🧪</div>
     <div>
@@ -18,22 +52,95 @@
 
   <div class="container">
     <a class="back-link" href="/">&#8592; Volver al inicio</a>
-
     <div class="instruction-card">
-      <div class="page-icon">🚽</div>
+
+      <!-- Ilustración principal -->
+      <figure class="illustration">
+        <svg width="180" height="240" viewBox="0 0 180 240" xmlns="http://www.w3.org/2000/svg">
+          <!-- Bote de orina -->
+          <rect x="50" y="60" width="80" height="140" rx="10" ry="10" fill="#fefce8" stroke="#d97706" stroke-width="2.5"/>
+          <!-- Tapa roja -->
+          <rect x="44" y="40" width="92" height="28" rx="8" ry="8" fill="#ef4444" stroke="#b91c1c" stroke-width="2"/>
+          <rect x="55" y="45" width="70" height="16" rx="4" ry="4" fill="#fca5a5" opacity="0.5"/>
+          <!-- Líquido orina -->
+          <rect x="52" y="130" width="76" height="68" rx="0 0 8 8" fill="#fde68a" opacity="0.85"/>
+          <!-- Línea de llenado -->
+          <line x1="52" y1="128" x2="128" y2="128" stroke="#b45309" stroke-width="2" stroke-dasharray="5,3"/>
+          <text x="133" y="132" font-size="10" fill="#b45309" font-family="sans-serif">↑ min</text>
+          <!-- Etiqueta -->
+          <rect x="60" y="80" width="60" height="36" rx="4" fill="white" stroke="#d1d5db" stroke-width="1.5"/>
+          <line x1="65" y1="90" x2="115" y2="90" stroke="#9ca3af" stroke-width="1.2"/>
+          <line x1="65" y1="98" x2="110" y2="98" stroke="#9ca3af" stroke-width="1.2"/>
+          <line x1="65" y1="106" x2="100" y2="106" stroke="#9ca3af" stroke-width="1.2"/>
+          <!-- Brillos -->
+          <line x1="62" y1="70" x2="62" y2="190" stroke="white" stroke-width="3" opacity="0.35"/>
+        </svg>
+        <figcaption>Bote con tapa roja — llenar hasta la marca superior (≈100 ml)</figcaption>
+      </figure>
+
       <h2>Recogida de Orina</h2>
 
       <div class="instruction-content">
-        <div class="placeholder-text">
-          Las instrucciones detalladas para la recogida de orina se añadirán aquí próximamente.
+        <p>En el paquete recibido encontrará un recipiente para la recogida de orina con <strong>tapa roja</strong>, etiquetado con su nombre completo. Se necesitan entre <strong>75 y 100 ml</strong> de orina. También encontrará una bolsa con cierre fácil para su almacenamiento.</p>
+
+        <div class="alert-box">
+          <strong>⚠️ Importante: planificación del envío</strong>
+          La muestra debe ser recogida por el transportista <strong>al día siguiente</strong> de haberla tomado. No tome la muestra un sábado ni cuando no pueda estar disponible al día siguiente para entregarla. Avise a Joaquín Castilla con antelación para que organice la recogida.
+        </div>
+
+        <div class="tip-box" style="margin-bottom:8px;">
+          💡 De ser posible, recoja la muestra cuando lleve <strong>al menos 2 horas sin orinar</strong>. No es necesario que sea la primera orina del día.
+        </div>
+
+        <div class="section-title">✅ Instrucciones paso a paso</div>
+        <div class="steps">
+
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              Con las <strong>manos lavadas</strong> con agua y jabón, abra el bote de tapa roja tocando lo menos posible la boca del bote y la superficie interior de la tapa. Deje la tapa boca arriba.
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              Orine en el bote hasta prácticamente llenarlo (<strong>hasta la marca superior</strong>, aproximadamente 100 ml).
+              <figure class="illustration" style="margin-top:12px;">
+                <svg width="140" height="80" viewBox="0 0 140 80" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="30" y="10" width="60" height="60" rx="6" fill="#fefce8" stroke="#d97706" stroke-width="2"/>
+                  <rect x="32" y="44" width="56" height="24" rx="0 0 6 6" fill="#fde68a" opacity="0.9"/>
+                  <line x1="32" y1="42" x2="88" y2="42" stroke="#b45309" stroke-width="2" stroke-dasharray="4,3"/>
+                  <text x="92" y="46" font-size="9" fill="#b45309" font-family="sans-serif" font-weight="bold">← llenar</text>
+                  <text x="92" y="56" font-size="9" fill="#b45309" font-family="sans-serif">al menos</text>
+                </svg>
+                <figcaption>Llenar hasta la marca superior al menos</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              Si no pudiera llenarlo de una sola vez, conserve la muestra en la <strong>nevera (refrigerado)</strong> y acabe de llenarlo más tarde, siempre dentro del <strong>mismo día</strong>. Puede ir recogiendo muestras a lo largo del día.
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              Cuando el bote esté lleno hasta la marca, <strong>ciérrelo</strong>, introdúzcalo en la bolsa de plástico con cierre fácil (incluida en el paquete) y consérvelo <strong>refrigerado en la nevera</strong> hasta el envío.
+              <div class="tip-box" style="margin-top:10px;">
+                📌 Recuerde: una vez avise a Joaquín Castilla, el transportista pasará a recogerlo al día siguiente.
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
 
-  <footer>
-    &copy; 2026 &mdash; Instrucciones de Recogida de Muestras para Donantes
-  </footer>
-
+  <footer>&copy; 2026 &mdash; Instrucciones de Recogida de Muestras para Donantes</footer>
 </body>
 </html>

@@ -5,9 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Secreción Nasal | Instrucciones</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .section-title {
+      font-size: 1.1rem; font-weight: 700; color: #0077b6;
+      margin: 28px 0 12px; display: flex; align-items: center; gap: 10px;
+    }
+    .section-title::after {
+      content: ''; flex: 1; height: 2px;
+      background: linear-gradient(90deg, #00b4d8, transparent); border-radius: 2px;
+    }
+    .alert-box {
+      background: #fff8e1; border-left: 5px solid #f59e0b;
+      border-radius: 0 10px 10px 0; padding: 14px 18px; margin: 16px 0;
+      color: #92400e; font-size: 0.93rem; line-height: 1.65;
+    }
+    .alert-box strong { display: block; margin-bottom: 4px; }
+    .steps { display: flex; flex-direction: column; gap: 14px; }
+    .step { display: flex; gap: 14px; align-items: flex-start;
+      background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; }
+    .step-num {
+      background: linear-gradient(135deg, #0077b6, #00b4d8); color: white;
+      font-weight: 700; font-size: 1rem; width: 34px; height: 34px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .step-body { font-size: 0.93rem; line-height: 1.7; color: #2d3748; flex: 1; }
+    .tip-box {
+      background: #ecfdf5; border-left: 5px solid #10b981;
+      border-radius: 0 10px 10px 0; padding: 12px 16px; margin-top: 10px;
+      color: #064e3b; font-size: 0.9rem; line-height: 1.6;
+    }
+    .illustration { text-align: center; margin: 16px 0; }
+    .illustration figcaption { font-size: 0.82rem; color: #718096; margin-top: 6px; font-style: italic; }
+    .depth-badge {
+      display: inline-block; background: #dbeafe; color: #1e40af;
+      border: 1.5px solid #93c5fd; border-radius: 8px;
+      padding: 4px 12px; font-size: 0.88rem; font-weight: 700; margin-top: 6px;
+    }
+  </style>
 </head>
 <body>
-
   <header>
     <div class="logo">🧪</div>
     <div>
@@ -18,22 +54,104 @@
 
   <div class="container">
     <a class="back-link" href="/">&#8592; Volver al inicio</a>
-
     <div class="instruction-card">
-      <div class="page-icon">👃</div>
+
+      <!-- Ilustración principal -->
+      <figure class="illustration">
+        <svg width="240" height="180" viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg">
+          <!-- Perfil nariz (vista lateral) -->
+          <!-- Puente nariz -->
+          <path d="M90 20 Q85 50 80 80 Q76 100 72 115 Q68 135 78 148 Q88 158 100 158 Q115 158 122 145 Q128 132 125 115"
+                stroke="#94a3b8" stroke-width="2.5" fill="#fde8d8" fill-opacity="0.5"/>
+          <!-- Fosa nasal izquierda -->
+          <ellipse cx="88" cy="150" rx="14" ry="10" fill="#fca5a5" opacity="0.5" stroke="#f87171" stroke-width="1.5"/>
+          <!-- Tabique -->
+          <line x1="100" y1="138" x2="100" y2="162" stroke="#94a3b8" stroke-width="1.5"/>
+          <!-- Fosa nasal derecha -->
+          <ellipse cx="112" cy="150" rx="14" ry="10" fill="#fca5a5" opacity="0.5" stroke="#f87171" stroke-width="1.5"/>
+          <!-- Escobillón entrando en fosa izquierda -->
+          <line x1="88" y1="155" x2="88" y2="100" stroke="#d97706" stroke-width="3" stroke-linecap="round"/>
+          <!-- Cabeza escobillón -->
+          <ellipse cx="88" cy="98" rx="6" ry="10" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+          <!-- Mango escobillón -->
+          <line x1="88" y1="155" x2="88" y2="185" stroke="#6b7280" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Flecha de profundidad -->
+          <line x1="145" y1="155" x2="145" y2="100" stroke="#0077b6" stroke-width="1.5" stroke-dasharray="4,3"/>
+          <text x="148" y="130" font-size="9" fill="#0077b6" font-family="sans-serif">1.5–3 cm</text>
+          <line x1="143" y1="100" x2="147" y2="100" stroke="#0077b6" stroke-width="1.5"/>
+          <line x1="143" y1="155" x2="147" y2="155" stroke="#0077b6" stroke-width="1.5"/>
+          <!-- Rotación -->
+          <path d="M96 108 Q104 103 104 113" stroke="#10b981" stroke-width="1.8" fill="none" stroke-dasharray="3,2"/>
+          <text x="108" y="112" font-size="9" fill="#10b981" font-family="sans-serif">× 5</text>
+          <!-- Tubo -->
+          <rect x="168" y="30" width="22" height="90" rx="5" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="1.5"/>
+          <rect x="164" y="20" width="30" height="16" rx="5" fill="#ef4444"/>
+          <text x="160" y="15" font-size="8" fill="#64748b" font-family="sans-serif">tubo</text>
+        </svg>
+        <figcaption>Escobillón introducido 1.5–3 cm en la fosa nasal y rotado 5 veces. Mismo escobillón para ambas fosas.</figcaption>
+      </figure>
+
       <h2>Recogida de Secreción Nasal</h2>
 
       <div class="instruction-content">
-        <div class="placeholder-text">
-          Las instrucciones detalladas para la recogida de secreción nasal se añadirán aquí próximamente.
+        <p>En el paquete encontrará un <strong>tubo de rosca largo con tapa roja</strong>, con un escobillón pegado a la propia tapa del tubo.</p>
+
+        <div class="section-title">✅ Instrucciones paso a paso</div>
+        <div class="steps">
+
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              Lávese bien las manos con agua y jabón y <strong>séqueselas muy bien</strong> antes de manipular el tubo y el escobillón.
+              <div class="tip-box" style="margin-top:8px;">
+                💡 Si tiene mucha congestión nasal, <strong>suénese antes</strong> de tomar la muestra.
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              Con las manos limpias y secas, <strong>abra la tapa de rosca</strong> que tiene enganchado el escobillón. Agarre siempre por la tapa, <strong>sin tocar el escobillón</strong> con las manos ni apoyarlo en ninguna superficie.
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              Eche la cabeza <strong>ligeramente hacia atrás</strong> e introduzca el escobillón en una de las fosas nasales entre <strong>1,5 y 3 cm</strong> (llegando al fondo de la fosa, pero sin hacer fuerza).
+              <div style="margin-top:8px;">
+                <span class="depth-badge">📏 Profundidad: 1,5 – 3 cm</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <strong>Rote suavemente el escobillón unas 5 veces</strong> en esa fosa nasal. Luego repita la misma operación en la <strong>otra fosa nasal</strong>, utilizando el <strong>mismo escobillón</strong>.
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">5</div>
+            <div class="step-body">
+              Introduzca el escobillón de vuelta en su <strong>tubo original</strong> y <strong>cierre bien la tapa</strong> de rosca.
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">6</div>
+            <div class="step-body">
+              Meta el tubo bien cerrado en la <strong>bolsa de plástico original</strong> y <strong>refrigere la muestra</strong> en la nevera hasta su envío junto con el resto de las muestras.
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
 
-  <footer>
-    &copy; 2026 &mdash; Instrucciones de Recogida de Muestras para Donantes
-  </footer>
-
+  <footer>&copy; 2026 &mdash; Instrucciones de Recogida de Muestras para Donantes</footer>
 </body>
 </html>
