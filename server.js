@@ -10,7 +10,17 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-const pages = ['orina', 'lagrima', 'saliva', 'nasal', 'paquete'];
+const pages = [
+  'con-saliva',
+  'sin-saliva',
+  'orina',
+  'lagrima',
+  'saliva',
+  'nasal',
+  'paquete',
+  'paquete-sin-saliva',
+];
+
 pages.forEach(page => {
   app.get(`/${page}`, (req, res) => {
     res.sendFile(path.join(__dirname, 'public', `${page}.html`));

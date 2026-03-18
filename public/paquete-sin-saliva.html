@@ -3,146 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Preparar el Paquete | Instrucciones</title>
+  <title>Preparar el Paquete | Sin saliva</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     .section-title {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: #0077b6;
-      margin: 32px 0 14px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      font-size: 1.15rem; font-weight: 700; color: #0077b6;
+      margin: 32px 0 14px; display: flex; align-items: center; gap: 10px;
     }
     .section-title::after {
-      content: '';
-      flex: 1;
-      height: 2px;
-      background: linear-gradient(90deg, #00b4d8, transparent);
-      border-radius: 2px;
+      content: ''; flex: 1; height: 2px;
+      background: linear-gradient(90deg, #00b4d8, transparent); border-radius: 2px;
     }
-
     .alert-box {
-      background: #fff8e1;
-      border-left: 5px solid #f59e0b;
-      border-radius: 0 10px 10px 0;
-      padding: 16px 20px;
-      margin: 20px 0;
-      color: #92400e;
-      font-size: 0.95rem;
-      line-height: 1.65;
+      background: #fff8e1; border-left: 5px solid #f59e0b;
+      border-radius: 0 10px 10px 0; padding: 16px 20px; margin: 20px 0;
+      color: #92400e; font-size: 0.95rem; line-height: 1.65;
     }
-    .alert-box strong {
-      display: block;
-      margin-bottom: 6px;
-      font-size: 1rem;
-    }
-
-    .item-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+    .alert-box strong { display: block; margin-bottom: 6px; font-size: 1rem; }
+    .item-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
     .item-list li {
-      background: #f0f9ff;
-      border: 1px solid #bae6fd;
-      border-radius: 10px;
-      padding: 12px 16px;
-      font-size: 0.93rem;
-      line-height: 1.6;
-      color: #1e3a5f;
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
+      background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 10px;
+      padding: 12px 16px; font-size: 0.93rem; line-height: 1.6; color: #1e3a5f;
+      display: flex; gap: 12px; align-items: flex-start;
     }
-    .item-list li .bullet {
-      font-size: 1.1rem;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-
-    .doc-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+    .item-list li .bullet { font-size: 1.1rem; flex-shrink: 0; margin-top: 1px; }
+    .doc-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
     .doc-list li {
-      background: #f5f3ff;
-      border: 1px solid #c4b5fd;
-      border-radius: 10px;
-      padding: 12px 16px;
-      font-size: 0.93rem;
-      line-height: 1.6;
-      color: #3b1f6e;
+      background: #f5f3ff; border: 1px solid #c4b5fd; border-radius: 10px;
+      padding: 12px 16px; font-size: 0.93rem; line-height: 1.6; color: #3b1f6e;
     }
-    .doc-list li strong {
-      display: block;
-      color: #5b21b6;
-      margin-bottom: 3px;
-    }
-
-    .steps {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      margin-top: 4px;
-    }
+    .doc-list li strong { display: block; color: #5b21b6; margin-bottom: 3px; }
+    .steps { display: flex; flex-direction: column; gap: 16px; margin-top: 4px; }
     .step {
-      display: flex;
-      gap: 16px;
-      align-items: flex-start;
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 18px 18px;
+      display: flex; gap: 16px; align-items: flex-start;
+      background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px;
     }
     .step-num {
-      background: linear-gradient(135deg, #0077b6, #00b4d8);
-      color: white;
-      font-weight: 700;
-      font-size: 1rem;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
+      background: linear-gradient(135deg, #0077b6, #00b4d8); color: white;
+      font-weight: 700; font-size: 1rem; width: 36px; height: 36px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
     }
-    .step-body {
-      font-size: 0.94rem;
-      line-height: 1.7;
-      color: #2d3748;
-      flex: 1;
-    }
-    .step-body ul {
-      margin: 10px 0 0 18px;
-    }
-    .step-body ul li {
-      margin-bottom: 6px;
-    }
-
+    .step-body { font-size: 0.94rem; line-height: 1.7; color: #2d3748; flex: 1; }
+    .step-body ul { margin: 10px 0 0 18px; }
+    .step-body ul li { margin-bottom: 6px; }
     .note-box {
-      background: #ecfdf5;
-      border-left: 5px solid #10b981;
-      border-radius: 0 10px 10px 0;
-      padding: 14px 18px;
-      margin: 14px 0 4px;
-      color: #064e3b;
-      font-size: 0.9rem;
-      line-height: 1.6;
+      background: #ecfdf5; border-left: 5px solid #10b981;
+      border-radius: 0 10px 10px 0; padding: 14px 18px; margin: 14px 0 4px;
+      color: #064e3b; font-size: 0.9rem; line-height: 1.6;
     }
-    .note-box strong {
-      display: block;
-      margin-bottom: 4px;
-    }
+    .note-box strong { display: block; margin-bottom: 4px; }
   </style>
 </head>
 <body>
@@ -156,7 +65,7 @@
   </header>
 
   <div class="container">
-    <a class="back-link" href="/con-saliva">&#8592; Volver</a>
+    <a class="back-link" href="/sin-saliva">&#8592; Volver al inicio</a>
 
     <div class="instruction-card">
       <div class="page-icon">📦</div>
@@ -180,10 +89,6 @@
         <!-- CONTENIDO DEL PAQUETE -->
         <div class="section-title">📋 Contenido del paquete de porexpán</div>
         <ul class="item-list">
-          <li>
-            <span class="bullet">✉️</span>
-            <span>Sobre acolchado con la dirección de destino (abierto), a la atención de <strong>África Manero Ruíz de Azua</strong>, para el envío de la muestra de saliva.</span>
-          </li>
           <li>
             <span class="bullet">🧊</span>
             <span>Acumulador de frío (frigolín o bolsa de gel para congelar), que mantendrá las muestras refrigeradas en el envío de vuelta. Lo debe haber recibido <strong>descongelado</strong> (a temperatura ambiente).</span>
@@ -226,14 +131,6 @@
             Contiene las instrucciones generales sobre cómo proceder con los contenidos del paquete y cómo prepararlos para su envío.
           </li>
           <li>
-            <strong>💧 Instrucciones para la toma de muestra de saliva</strong>
-            Explica cómo proceder con el tubo de recolección de saliva (del que se extraerá su ADN) y cómo conservar la muestra hasta el envío.
-          </li>
-          <li>
-            <strong>🏷️ Etiqueta con nombre, código de barras y código del Biobanco</strong>
-            Para pegar en el tubo de recolección de saliva, según se indica en las instrucciones correspondientes.
-          </li>
-          <li>
             <strong>🚽 Instrucciones para la toma de muestra de orina</strong>
             Explica cómo recoger la muestra de orina y cómo conservarla hasta el envío.
           </li>
@@ -272,7 +169,7 @@
           <div class="step">
             <div class="step-num">3</div>
             <div class="step-body">
-              Lea las instrucciones para la toma de muestra de <strong>saliva, orina, lágrimas y mucosa nasal</strong> con detenimiento y planifique la toma de muestras de acuerdo con las indicaciones.
+              Lea las instrucciones para la toma de muestra de <strong>orina, lágrimas y mucosa nasal</strong> con detenimiento y planifique la toma de muestras de acuerdo con las indicaciones.
               <div class="alert-box" style="margin-top:12px;">
                 <strong>⚠️ Importante: planificación del envío</strong>
                 Las muestras deben enviarse <strong>al día siguiente de su toma</strong>. No realice la toma de muestras en sábado, ya que la recogida no podrá hacerse en domingo. Asegúrese además de estar disponible para entregar el paquete al transportista en su domicilio al día siguiente de la toma.
@@ -301,7 +198,6 @@
               <ul>
                 <li>🧊 Acumulador de frío (frigolín o bolsa de gel) <strong>congelado</strong>, en el fondo.</li>
                 <li>🫧 Plástico de burbujas, entre el acumulador de frío y las muestras.</li>
-                <li>✉️ Sobre acolchado (a la atención de África Manero) con la cajita de plástico con la muestra de saliva debidamente etiquetada.</li>
                 <li>🚽 Muestra de orina en su correspondiente bolsa de cierre fácil, cerrada.</li>
                 <li>👁️ Muestras de lágrimas en sus tubos con tapón de rosca y en su bolsita de plástico.</li>
                 <li>👃 Muestra de mucosa nasal en su correspondiente bolsa de plástico.</li>
@@ -320,11 +216,11 @@
             </div>
           </div>
 
-        </div><!-- /steps -->
+        </div>
 
-      </div><!-- /instruction-content -->
-    </div><!-- /instruction-card -->
-  </div><!-- /container -->
+      </div>
+    </div>
+  </div>
 
   <footer>
     &copy; 2026 &mdash; Instrucciones de Recogida de Muestras para Donantes

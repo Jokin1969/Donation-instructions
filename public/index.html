@@ -5,6 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Instrucciones de Recogida de Muestras</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .landing-container {
+      max-width: 760px;
+      margin: 50px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+    .landing-intro {
+      background: white;
+      border-radius: 16px;
+      padding: 28px 36px;
+      box-shadow: 0 4px 20px rgba(0,119,182,0.08);
+      border-left: 5px solid #0077b6;
+      width: 100%;
+    }
+    .landing-intro h2 { font-size: 1.25rem; color: #0077b6; margin-bottom: 10px; }
+    .landing-intro p { font-size: 0.97rem; line-height: 1.7; color: #4a5568; }
+
+    .macro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      width: 100%;
+    }
+    .macro-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      padding: 40px 28px;
+      border-radius: 20px;
+      text-decoration: none;
+      color: white;
+      box-shadow: 0 6px 28px rgba(0,0,0,0.12);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-align: center;
+    }
+    .macro-btn:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 40px rgba(0,0,0,0.18);
+    }
+    .macro-btn.con-saliva {
+      background: linear-gradient(145deg, #0077b6, #00b4d8);
+    }
+    .macro-btn.sin-saliva {
+      background: linear-gradient(145deg, #059669, #34d399);
+    }
+    .macro-btn .macro-icon { font-size: 3.6rem; line-height: 1; }
+    .macro-btn h2 { font-size: 1.2rem; font-weight: 700; margin: 0; }
+    .macro-btn p { font-size: 0.88rem; opacity: 0.9; line-height: 1.5; margin: 0; }
+    .macro-btn .macro-arrow {
+      font-size: 1.5rem;
+      opacity: 0.8;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 540px) {
+      .macro-grid { grid-template-columns: 1fr; }
+      .landing-intro { padding: 20px 18px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -16,51 +81,30 @@
     </div>
   </header>
 
-  <div class="container">
-    <div class="intro-box">
+  <div class="landing-container">
+    <div class="landing-intro">
       <h2>Bienvenido/a</h2>
       <p>
-        Esta página contiene toda la información que necesitas para realizar correctamente
-        la recogida de tus muestras en casa. Selecciona el tipo de muestra que debes recoger
-        y sigue las instrucciones paso a paso. Si tienes alguna duda, contacta con el equipo.
+        Selecciona el tipo de donación que te corresponde según las indicaciones
+        que has recibido del equipo. Cada opción te mostrará las instrucciones
+        específicas para tu caso.
       </p>
     </div>
 
-    <div class="grid">
+    <div class="macro-grid">
 
-      <a class="card" href="/orina">
-        <div class="icon">🚽</div>
-        <h3>Orina</h3>
-        <p>Instrucciones para la recogida de muestra de orina</p>
-        <span class="btn">Ver instrucciones</span>
+      <a class="macro-btn con-saliva" href="/con-saliva">
+        <div class="macro-icon">🧬</div>
+        <h2>Con donación de saliva</h2>
+        <p>Recogida de orina, lágrima, saliva, mucosa nasal y preparación del paquete</p>
+        <div class="macro-arrow">&#8594;</div>
       </a>
 
-      <a class="card" href="/lagrima">
-        <div class="icon">👁️</div>
-        <h3>Lágrima</h3>
-        <p>Instrucciones para la recogida de muestra de lágrima</p>
-        <span class="btn">Ver instrucciones</span>
-      </a>
-
-      <a class="card" href="/saliva">
-        <div class="icon">💧</div>
-        <h3>Saliva</h3>
-        <p>Instrucciones para la recogida de muestra de saliva</p>
-        <span class="btn">Ver instrucciones</span>
-      </a>
-
-      <a class="card" href="/nasal">
-        <div class="icon">👃</div>
-        <h3>Secreción Nasal</h3>
-        <p>Instrucciones para la recogida de secreción nasal</p>
-        <span class="btn">Ver instrucciones</span>
-      </a>
-
-      <a class="card" href="/paquete">
-        <div class="icon">📦</div>
-        <h3>Preparar el Paquete</h3>
-        <p>Cómo preparar y empaquetar las muestras para su recogida</p>
-        <span class="btn">Ver instrucciones</span>
+      <a class="macro-btn sin-saliva" href="/sin-saliva">
+        <div class="macro-icon">🔬</div>
+        <h2>Sin donación de saliva</h2>
+        <p>Recogida de orina, lágrima, mucosa nasal y preparación del paquete</p>
+        <div class="macro-arrow">&#8594;</div>
       </a>
 
     </div>
