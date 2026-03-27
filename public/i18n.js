@@ -114,7 +114,7 @@
       'pak.li5':     'Bolsa de pl\u00e1stico con cierre f\u00e1cil, para introducir el bote de orina una vez tomada la muestra.',
       'pak.li6':     'Bolsa de pl\u00e1stico con las tiras de papel para recogida de l\u00e1grima, 2 tubos con tapa de rosca para su almacenamiento, y un par de guantes de l\u00e1tex desechables.',
       'pak.li7':     'Tubo de pl\u00e1stico con escobill\u00f3n para toma de muestra de mucosa nasal.',
-      'pak.li8':     'C\u00f3digo QR impreso para acceder a las instrucciones de toma de muestras y env\u00edo, y <strong>etiqueta autoadhesiva</strong> con la direcci\u00f3n de env\u00edo del paquete tras la recogida de muestras, a nombre de Carol Arist\u00imum\u00f1o.',
+      'pak.li8':     'C\u00f3digo QR impreso para acceder a las instrucciones de toma de muestras y env\u00edo, y <strong>etiqueta autoadhesiva</strong> con la direcci\u00f3n de env\u00edo del paquete tras la recogida de muestras, a nombre de Carol Aristimu\u00f1o.',
       'pak.steps':   '\u2705 Instrucciones paso a paso',
       'pak.s1':      'Extraiga todo el contenido del paquete y <strong>escanee el c\u00f3digo QR</strong> que le dirigir\u00e1 a las instrucciones para la toma de muestras y preparaci\u00f3n y env\u00edo del paquete.',
       'pak.s2':      'Meta el acumulador de fr\u00edo (frigol\u00edn o bolsa de gel) en el <strong>congelador</strong> para tenerlo preparado el d\u00eda que tenga que preparar el paquete con las muestras.',
