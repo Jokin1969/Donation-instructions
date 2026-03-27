@@ -82,7 +82,25 @@
       'lag.s6':    'Retire la tira suavemente agarr\u00e1ndola por el extremo inferior e intr\u00f3dúzcala en el <strong>tubo de pl\u00e1stico</strong> (d\u00f3blela si es necesario para que entre del todo). Cierre bien la tapa.',
       'lag.s7':    'Repita la misma operaci\u00f3n con la <strong>segunda tira en el otro ojo</strong>.',
       'lag.s8':    'Una vez guardadas las dos tiras en sus tubos, deseche los guantes y meta los tubos cerrados en el <strong>congelador</strong>. Mant\u00e9ngalos congelados hasta el env\u00edo.',
-      'lag.video': '<strong>\u00bfNecesita un ejemplo visual?</strong><br/>Puede ver un v\u00eddeo demostrativo del proceso en el siguiente enlace:<br/><br/><a href="https://www.youtube.com/watch?v=Sn2lqhk_IYc" target="_blank" rel="noopener noreferrer" style="color:#5b21b6; font-weight:700; text-decoration:underline;">\u25b6 Schirmer test \u2014 ver v\u00eddeo</a>'
+      'lag.video': '<strong>\u00bfNecesita un ejemplo visual?</strong><br/>Puede ver un v\u00eddeo demostrativo del proceso en el siguiente enlace:<br/><br/><a href="https://www.youtube.com/watch?v=Sn2lqhk_IYc" target="_blank" rel="noopener noreferrer" style="color:#5b21b6; font-weight:700; text-decoration:underline;">\u25b6 Schirmer test \u2014 ver v\u00eddeo</a>',
+
+      // ── saliva.html ────────────────────────────────────
+      'sal.fig1':  'Kit de recogida de saliva \u2014 llenar hasta la l\u00ednea \u201cFILL TO\u201d',
+      'sal.h2':    'Recogida de Saliva',
+      'sal.intro': 'En el paquete encontrar\u00e1 una <strong>cajita de pl\u00e1stico</strong> con un tubo de recolecci\u00f3n con boquilla ancha y un dep\u00f3sito de l\u00edquido adjunto, m\u00e1s un tap\u00f3n suelto para el cierre final. Con esta saliva se extraer\u00e1 posteriormente su <strong>ADN</strong>.',
+      'sal.alert': '<strong>\u26a0\ufe0f Antes de empezar</strong><ul style="margin:6px 0 0 18px;padding:0;"><li>No coma, beba, fume ni mastique chicle al menos <strong>30 minutos antes</strong>. Las part\u00edculas o qu\u00edmicos pueden dificultar la extracci\u00f3n del ADN.</li><li><strong>No retire</strong> el cierre de pl\u00e1stico de la tapa de la boquilla antes de usarlo para no perder el l\u00edquido interior.</li></ul>',
+      'sal.steps': '\u2705 Instrucciones paso a paso',
+      'sal.time':  'El proceso puede llevar entre 2 y 5 minutos seg\u00fan cada persona.',
+      'sal.s1':    'Saque el tubo de recolecci\u00f3n con la boquilla acoplada de la caja de pl\u00e1stico. <strong>Agarre siempre por el tubo</strong>, no por la boquilla, para evitar contaminarla.',
+      'sal.s2':    'Acumule saliva en la boca durante unos segundos y vaya <strong>escupi\u00e9ndola en la boquilla</strong> hasta que la saliva (el l\u00edquido, <em>no las burbujas</em>) alcance la <strong>l\u00ednea de llenado</strong> marcada en el tubo (\u201cFILL TO\u201d).',
+      'sal.fig2':  'S\u00f3lo cuenta el l\u00edquido, no las burbujas',
+      'sal.s3':    'Mantenga el tubo <strong>en posici\u00f3n vertical</strong> y, con la otra mano, cierre la tapa de la boquilla pres\u00e1ndola hasta escuchar un <strong>\u201cclic\u201d</strong>.',
+      'sal.s4':    'Manteniendo el tubo vertical, <strong>desenrosque la boquilla</strong> (con la tapa ya cerrada) y des\u00e9chela directamente a la basura.',
+      'sal.s5':    'Utilice el <strong>tap\u00f3n peque\u00f1o suelto</strong> para cerrar firmemente el tubo, sin tocar la boca del tubo directamente con las manos.',
+      'sal.s6':    'Con el tubo bien cerrado, <strong>ag\u00edtelo durante 5\u201310 segundos</strong> para que se mezclen bien la saliva y el l\u00edquido de la tapa.',
+      'sal.s7':    'Pegue la <strong>etiqueta autoadhesiva</strong> (pegada a la cajita de pl\u00e1stico) con su nombre, c\u00f3digo de barras y c\u00f3digo del Biobanco sobre el tubo. Vuelva a colocar el tubo en su cajita de pl\u00e1stico original.',
+      'sal.s8':    'Meta la caja de pl\u00e1stico en el <strong>sobre acolchado peque\u00f1o</strong> (ya viene con la etiqueta de destino a la atenci\u00f3n de \u00c1frica Manero) y cons\u00e9rvela a <strong>temperatura ambiente</strong> hasta la recogida. No hace falta refrigerar esta muestra.',
+      'sal.tip8':  '\ud83d\udccc <strong>Env\u00edo conjunto (varios familiares):</strong> Si han recibido varios kits, meta todas las cajitas en un sobre acolchado grande o en la misma caja en la que las recibieron, usando la etiqueta grande de destino incluida a la atenci\u00f3n de \u00c1frica Manero.'
     },
     en: {
       // ── Compartidos (header / footer) ──────────────────
@@ -163,7 +181,25 @@
       'lag.s6':    'Gently remove the strip by grasping it at the lower end and place it in the <strong>plastic tube</strong> (fold it if necessary so it fits completely). Close the cap firmly.',
       'lag.s7':    'Repeat the same procedure with the <strong>second strip in the other eye</strong>.',
       'lag.s8':    'Once both strips are stored in their tubes, discard the gloves and place the closed tubes in the <strong>freezer</strong>. Keep them frozen until shipment.',
-      'lag.video': '<strong>Need a visual example?</strong><br/>You can watch a demonstration video of the process at the following link:<br/><br/><a href="https://www.youtube.com/watch?v=Sn2lqhk_IYc" target="_blank" rel="noopener noreferrer" style="color:#5b21b6; font-weight:700; text-decoration:underline;">\u25b6 Schirmer test \u2014 watch video</a>'
+      'lag.video': '<strong>Need a visual example?</strong><br/>You can watch a demonstration video of the process at the following link:<br/><br/><a href="https://www.youtube.com/watch?v=Sn2lqhk_IYc" target="_blank" rel="noopener noreferrer" style="color:#5b21b6; font-weight:700; text-decoration:underline;">\u25b6 Schirmer test \u2014 watch video</a>',
+
+      // ── saliva.html ────────────────────────────────────
+      'sal.fig1':  'Saliva collection kit \u2014 fill up to the \u201cFILL TO\u201d line',
+      'sal.h2':    'Saliva Collection',
+      'sal.intro': 'In the package you will find a <strong>small plastic box</strong> with a wide-mouth collection tube with an attached liquid reservoir, plus a loose stopper for the final seal. This saliva will later be used to extract your <strong>DNA</strong>.',
+      'sal.alert': '<strong>\u26a0\ufe0f Before you start</strong><ul style="margin:6px 0 0 18px;padding:0;"><li>Do not eat, drink, smoke or chew gum for at least <strong>30 minutes beforehand</strong>. Particles or chemicals can make DNA extraction more difficult.</li><li><strong>Do not remove</strong> the plastic seal from the mouthpiece cap before use, as you may lose the liquid inside.</li></ul>',
+      'sal.steps': '\u2705 Step-by-step instructions',
+      'sal.time':  'The process may take between 2 and 5 minutes depending on the person.',
+      'sal.s1':    'Remove the collection tube with the attached mouthpiece from the plastic box. <strong>Always hold it by the tube</strong>, not by the mouthpiece, to avoid contaminating it.',
+      'sal.s2':    'Gather saliva in your mouth for a few seconds and <strong>spit it into the mouthpiece</strong> until the saliva (the liquid, <em>not the bubbles</em>) reaches the <strong>fill line</strong> marked on the tube (\u201cFILL TO\u201d).',
+      'sal.fig2':  'Only the liquid counts, not the bubbles',
+      'sal.s3':    'Keep the tube <strong>upright</strong> and, with your other hand, close the mouthpiece cap by pressing until you hear a <strong>\u201cclick\u201d</strong>.',
+      'sal.s4':    'Keeping the tube upright, <strong>unscrew the mouthpiece</strong> (with the cap already closed) and discard it directly in the bin.',
+      'sal.s5':    'Use the <strong>small loose stopper</strong> to firmly close the tube, without touching the tube opening directly with your hands.',
+      'sal.s6':    'With the tube tightly closed, <strong>shake it for 5\u201310 seconds</strong> so that the saliva and the liquid from the cap mix well.',
+      'sal.s7':    'Stick the <strong>self-adhesive label</strong> (attached to the plastic box) with your name, barcode and Biobank code onto the tube. Place the tube back in its original plastic box.',
+      'sal.s8':    'Place the plastic box in the <strong>small padded envelope</strong> (already labelled for the attention of \u00c1frica Manero) and keep it at <strong>room temperature</strong> until collection. This sample does not need to be refrigerated.',
+      'sal.tip8':  '\ud83d\udccc <strong>Group shipment (several family members):</strong> If you have received several kits, place all the boxes in a large padded envelope or in the same box in which you received them, using the large destination label included for the attention of \u00c1frica Manero.'
     }
   };
 
