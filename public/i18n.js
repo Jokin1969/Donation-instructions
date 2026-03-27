@@ -15,7 +15,25 @@
       'idx.btn1.h2': 'Donación inicial',
       'idx.btn1.p':  'Recogida de orina, lágrima, saliva, mucosa nasal y preparación del paquete',
       'idx.btn2.h2': 'Donación estándar',
-      'idx.btn2.p':  'Recogida de orina, lágrima, mucosa nasal y preparación del paquete'
+      'idx.btn2.p':  'Recogida de orina, lágrima, mucosa nasal y preparación del paquete',
+
+      // ── con-saliva.html / sin-saliva.html ──────────────
+      'cs.h2':    'Donación inicial',
+      'ss.h2':    'Donación estándar',
+      'sel.intro': 'Esta página contiene toda la información que necesitas para realizar correctamente la recogida de tus muestras en casa. Te recomendamos leer primero las instrucciones para <strong>Preparar el Paquete</strong>, porque en él se desglosan los contenidos de la caja de muestras y qué hacer con los mismos. Después, selecciona cada tipo de muestra que debes recoger y sigue las instrucciones paso a paso. Si tienes alguna duda, contacta con el equipo.',
+
+      // ── Tarjetas de muestra (compartidas) ──────────────
+      'card.orina.h3':    'Orina',
+      'card.orina.p':     'Instrucciones para la recogida de muestra de orina',
+      'card.lagrima.h3':  'Lágrima',
+      'card.lagrima.p':   'Instrucciones para la recogida de muestra de lágrima',
+      'card.saliva.h3':   'Saliva',
+      'card.saliva.p':    'Instrucciones para la recogida de muestra de saliva',
+      'card.nasal.h3':    'Secreción Nasal',
+      'card.nasal.p':     'Instrucciones para la recogida de secreción nasal',
+      'card.paquete.h3':  'Preparar el Paquete',
+      'card.paquete.p':   'Cómo preparar y empaquetar las muestras para su recogida',
+      'card.btn':         'Ver instrucciones'
     },
     en: {
       // ── Compartidos (header / footer) ──────────────────
@@ -29,7 +47,25 @@
       'idx.btn1.h2': 'Initial Donation',
       'idx.btn1.p':  'Collection of urine, tear, saliva, nasal mucosa and package preparation',
       'idx.btn2.h2': 'Standard Donation',
-      'idx.btn2.p':  'Collection of urine, tear, nasal mucosa and package preparation'
+      'idx.btn2.p':  'Collection of urine, tear, nasal mucosa and package preparation',
+
+      // ── con-saliva.html / sin-saliva.html ──────────────
+      'cs.h2':    'Initial Donation',
+      'ss.h2':    'Standard Donation',
+      'sel.intro': 'This page contains all the information you need to correctly collect your samples at home. We recommend reading the <strong>Package Preparation</strong> instructions first, as they describe the contents of the sample box and what to do with each item. Then select each sample type you need to collect and follow the step-by-step instructions. If you have any questions, contact the team.',
+
+      // ── Sample cards (shared) ───────────────────────────
+      'card.orina.h3':    'Urine',
+      'card.orina.p':     'Instructions for urine sample collection',
+      'card.lagrima.h3':  'Tear',
+      'card.lagrima.p':   'Instructions for tear sample collection',
+      'card.saliva.h3':   'Saliva',
+      'card.saliva.p':    'Instructions for saliva sample collection',
+      'card.nasal.h3':    'Nasal Secretion',
+      'card.nasal.p':     'Instructions for nasal secretion collection',
+      'card.paquete.h3':  'Prepare the Package',
+      'card.paquete.p':   'How to prepare and package the samples for collection',
+      'card.btn':         'View instructions'
     }
   };
 
