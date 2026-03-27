@@ -47,13 +47,13 @@
   <header>
     <div class="logo">🧪</div>
     <div>
-      <h1>Instrucciones de Recogida de Muestras</h1>
-      <p>Para donantes a domicilio</p>
+      <h1 data-i18n="hdr.title">Instrucciones de Recogida de Muestras</h1>
+      <p data-i18n="hdr.sub">Para donantes a domicilio</p>
     </div>
   </header>
 
   <div class="container">
-    <a class="back-link" href="#" onclick="history.back(); return false;">&#8592; Volver</a>
+    <a class="back-link" href="#" onclick="history.back(); return false;" data-i18n="back">&#8592; Volver</a>
     <div class="instruction-card">
 
       <!-- Ilustración principal -->
@@ -88,22 +88,22 @@
           <rect x="164" y="20" width="30" height="16" rx="5" fill="#ef4444"/>
           <text x="160" y="15" font-size="8" fill="#64748b" font-family="sans-serif">tubo</text>
         </svg>
-        <figcaption>Escobillón introducido 1.5–3 cm en la fosa nasal y rotado 5 veces. Mismo escobillón para ambas fosas.</figcaption>
+        <figcaption data-i18n="nas.fig1">Escobillón introducido 1.5–3 cm en la fosa nasal y rotado 5 veces. Mismo escobillón para ambas fosas.</figcaption>
       </figure>
 
-      <h2>Recogida de Secreción Nasal</h2>
+      <h2 data-i18n="nas.h2">Recogida de Secreción Nasal</h2>
 
       <div class="instruction-content">
-        <p>En el paquete encontrará un <strong>tubo de rosca largo con tapa roja</strong>, con un escobillón pegado a la propia tapa del tubo.</p>
+        <p data-i18n-html="nas.intro">En el paquete encontrará un <strong>tubo de rosca largo con tapa roja</strong>, con un escobillón pegado a la propia tapa del tubo.</p>
 
-        <div class="section-title">✅ Instrucciones paso a paso</div>
+        <div class="section-title" data-i18n="nas.steps">✅ Instrucciones paso a paso</div>
         <div class="steps">
 
           <div class="step">
             <div class="step-num">1</div>
             <div class="step-body">
-              Lávese bien las manos con agua y jabón y <strong>séqueselas muy bien</strong> antes de manipular el tubo y el escobillón.
-              <div class="tip-box" style="margin-top:8px;">
+              <span data-i18n-html="nas.s1">Lávese bien las manos con agua y jabón y <strong>séqueselas muy bien</strong> antes de manipular el tubo y el escobillón.</span>
+              <div class="tip-box" style="margin-top:8px;" data-i18n-html="nas.tip1">
                 💡 Si tiene mucha congestión nasal, <strong>suénese antes</strong> de tomar la muestra.
               </div>
             </div>
@@ -111,7 +111,7 @@
 
           <div class="step">
             <div class="step-num">2</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="nas.s2">
               Con las manos limpias y secas, <strong>abra la tapa de rosca</strong> que tiene enganchado el escobillón. Agarre siempre por la tapa, <strong>sin tocar el escobillón</strong> con las manos ni apoyarlo en ninguna superficie.
             </div>
           </div>
@@ -119,30 +119,30 @@
           <div class="step">
             <div class="step-num">3</div>
             <div class="step-body">
-              Eche la cabeza <strong>ligeramente hacia atrás</strong> e introduzca el escobillón en una de las fosas nasales entre <strong>1,5 y 3 cm</strong> (llegando al fondo de la fosa, pero sin hacer fuerza).
+              <span data-i18n-html="nas.s3">Eche la cabeza <strong>ligeramente hacia atrás</strong> e introduzca el escobillón en una de las fosas nasales entre <strong>1,5 y 3 cm</strong> (llegando al fondo de la fosa, pero sin hacer fuerza).</span>
               <div style="margin-top:8px;">
-                <span class="depth-badge">📏 Profundidad: 1,5 – 3 cm</span>
+                <span class="depth-badge" data-i18n="nas.badge">📏 Profundidad: 1,5 – 3 cm</span>
               </div>
             </div>
           </div>
 
           <div class="step">
             <div class="step-num">4</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="nas.s4">
               <strong>Rote suavemente el escobillón unas 5 veces</strong> en esa fosa nasal. Luego repita la misma operación en la <strong>otra fosa nasal</strong>, utilizando el <strong>mismo escobillón</strong>.
             </div>
           </div>
 
           <div class="step">
             <div class="step-num">5</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="nas.s5">
               Introduzca el escobillón de vuelta en su <strong>tubo original</strong> y <strong>cierre bien la tapa</strong> de rosca.
             </div>
           </div>
 
           <div class="step">
             <div class="step-num">6</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="nas.s6">
               Meta el tubo bien cerrado en la <strong>bolsa de plástico original</strong> y <strong>refrigere la muestra</strong> en la nevera hasta su envío junto con el resto de las muestras.
             </div>
           </div>
@@ -152,6 +152,7 @@
     </div>
   </div>
 
-  <footer>&copy; 2026 &mdash; Instrucciones de Recogida de Muestras para Donantes</footer>
+  <footer data-i18n="footer">&copy; 2026 &mdash; Instrucciones de Recogida de Muestras para Donantes</footer>
+  <script src="/i18n.js"></script>
 </body>
 </html>

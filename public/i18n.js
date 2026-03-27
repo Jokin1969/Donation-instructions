@@ -33,7 +33,36 @@
       'card.nasal.p':     'Instrucciones para la recogida de secreción nasal',
       'card.paquete.h3':  'Preparar el Paquete',
       'card.paquete.p':   'Cómo preparar y empaquetar las muestras para su recogida',
-      'card.btn':         'Ver instrucciones'
+      'card.btn':         'Ver instrucciones',
+
+      // ── orina.html ─────────────────────────────────────
+      'back':       '\u2190 Volver',
+      'ori.fig1':   'Bote con tapa roja \u2014 llenar hasta la marca superior (\u2248100 ml)',
+      'ori.h2':     'Recogida de Orina',
+      'ori.intro':  'En el paquete recibido encontrar\u00e1 un recipiente para la recogida de orina con <strong>tapa roja</strong>, etiquetado con su nombre completo. Se necesitan entre <strong>75 y 100 ml</strong> de orina. Tambi\u00e9n encontrar\u00e1 una bolsa con cierre f\u00e1cil para su almacenamiento.',
+      'ori.alert':  '<strong>\u26a0\ufe0f Importante: planificaci\u00f3n del env\u00edo</strong> La muestra debe ser recogida por el transportista <strong>al d\u00eda siguiente</strong> de haberla tomado. No tome la muestra un s\u00e1bado ni cuando no pueda estar disponible al d\u00eda siguiente para entregarla. Avise a Joaqu\u00edn Castilla con antelaci\u00f3n para que organice la recogida. Si tiene dudas, encontrar\u00e1 instrucciones m\u00e1s detalladas sobre c\u00f3mo planificar el env\u00edo en la secci\u00f3n de <strong><a href="#" onclick="history.back();return false;" style="color:#92400e;">Preparaci\u00f3n del Paquete</a></strong>.',
+      'ori.tip1':   '\ud83d\udca1 De ser posible, recoja la muestra cuando lleve <strong>al menos 2 horas sin orinar</strong>. No es necesario que sea la primera orina del d\u00eda.',
+      'ori.steps':  '\u2705 Instrucciones paso a paso',
+      'ori.s1':     'Con las <strong>manos lavadas</strong> con agua y jab\u00f3n, abra el bote de tapa roja tocando lo menos posible la boca del bote y la superficie interior de la tapa. Deje la tapa boca arriba.',
+      'ori.s2':     'Orine en el bote hasta pr\u00e1cticamente llenarlo (<strong>hasta la marca superior</strong>, aproximadamente 100 ml).',
+      'ori.fig2':   'Llenar hasta la marca superior al menos',
+      'ori.s3':     'Si no pudiera llenarlo de una sola vez, conserve la muestra en la <strong>nevera (refrigerado)</strong> y acabe de llenarlo m\u00e1s tarde, siempre dentro del <strong>mismo d\u00eda</strong>. Puede ir recogiendo muestras a lo largo del d\u00eda.',
+      'ori.s4':     'Cuando el bote est\u00e9 lleno hasta la marca, <strong>ci\u00e9rrelo</strong>, intr\u00f3dúzcalo en la bolsa de pl\u00e1stico con cierre f\u00e1cil (incluida en el paquete) y cons\u00e9rvelo <strong>refrigerado en la nevera</strong> hasta el env\u00edo.',
+      'ori.tip2':   '\ud83d\udccc Recuerde: una vez avise a Joaqu\u00edn Castilla, el transportista pasar\u00e1 a recogerlo al d\u00eda siguiente.',
+
+      // ── nasal.html ─────────────────────────────────────
+      'nas.fig1':   'Escobill\u00f3n introducido 1.5\u20133 cm en la fosa nasal y rotado 5 veces. Mismo escobill\u00f3n para ambas fosas.',
+      'nas.h2':     'Recogida de Secreci\u00f3n Nasal',
+      'nas.intro':  'En el paquete encontrar\u00e1 un <strong>tubo de rosca largo con tapa roja</strong>, con un escobill\u00f3n pegado a la propia tapa del tubo.',
+      'nas.steps':  '\u2705 Instrucciones paso a paso',
+      'nas.s1':     'L\u00e1vese bien las manos con agua y jab\u00f3n y <strong>s\u00e9queselas muy bien</strong> antes de manipular el tubo y el escobill\u00f3n.',
+      'nas.tip1':   '\ud83d\udca1 Si tiene mucha congesti\u00f3n nasal, <strong>su\u00e9nese antes</strong> de tomar la muestra.',
+      'nas.s2':     'Con las manos limpias y secas, <strong>abra la tapa de rosca</strong> que tiene enganchado el escobill\u00f3n. Agarre siempre por la tapa, <strong>sin tocar el escobill\u00f3n</strong> con las manos ni apoyarlo en ninguna superficie.',
+      'nas.s3':     'Eche la cabeza <strong>ligeramente hacia atr\u00e1s</strong> e introduzca el escobill\u00f3n en una de las fosas nasales entre <strong>1,5 y 3 cm</strong> (llegando al fondo de la fosa, pero sin hacer fuerza).',
+      'nas.badge':  '\ud83d\udccf Profundidad: 1,5 \u2013 3 cm',
+      'nas.s4':     '<strong>Rote suavemente el escobill\u00f3n unas 5 veces</strong> en esa fosa nasal. Luego repita la misma operaci\u00f3n en la <strong>otra fosa nasal</strong>, utilizando el <strong>mismo escobill\u00f3n</strong>.',
+      'nas.s5':     'Introduzca el escobill\u00f3n de vuelta en su <strong>tubo original</strong> y <strong>cierre bien la tapa</strong> de rosca.',
+      'nas.s6':     'Meta el tubo bien cerrado en la <strong>bolsa de pl\u00e1stico original</strong> y <strong>refrigere la muestra</strong> en la nevera hasta su env\u00edo junto con el resto de las muestras.'
     },
     en: {
       // ── Compartidos (header / footer) ──────────────────
@@ -65,7 +94,36 @@
       'card.nasal.p':     'Instructions for nasal secretion collection',
       'card.paquete.h3':  'Prepare the Package',
       'card.paquete.p':   'How to prepare and package the samples for collection',
-      'card.btn':         'View instructions'
+      'card.btn':         'View instructions',
+
+      // ── orina.html ─────────────────────────────────────
+      'back':       '\u2190 Back',
+      'ori.fig1':   'Red-capped container \u2014 fill to the upper mark (\u2248100 ml)',
+      'ori.h2':     'Urine Collection',
+      'ori.intro':  'In the package you received you will find a urine collection container with a <strong>red cap</strong>, labelled with your full name. You need between <strong>75 and 100 ml</strong> of urine. You will also find a zip-lock bag for storage.',
+      'ori.alert':  '<strong>\u26a0\ufe0f Important: scheduling the shipment</strong> The sample must be collected by the courier <strong>the day after</strong> you take it. Do not collect the sample on a Saturday or when you cannot be available the next day to hand it over. Notify Joaqu\u00edn Castilla in advance so he can arrange the pick-up. If in doubt, you will find more detailed instructions on how to plan the shipment in the <strong><a href="#" onclick="history.back();return false;" style="color:#92400e;">Package Preparation</a></strong> section.',
+      'ori.tip1':   '\ud83d\udca1 If possible, collect the sample when you have gone <strong>at least 2 hours without urinating</strong>. It does not need to be first-morning urine.',
+      'ori.steps':  '\u2705 Step-by-step instructions',
+      'ori.s1':     'With <strong>hands washed</strong> with soap and water, open the red-capped container touching the opening and the inner surface of the cap as little as possible. Leave the cap face up.',
+      'ori.s2':     'Urinate into the container until it is almost full (<strong>up to the upper mark</strong>, approximately 100 ml).',
+      'ori.fig2':   'Fill at least to the upper mark',
+      'ori.s3':     'If you cannot fill it in one go, keep the sample in the <strong>fridge (refrigerated)</strong> and top it up later, always within the <strong>same day</strong>. You can collect samples throughout the day.',
+      'ori.s4':     'Once the container is filled to the mark, <strong>close it</strong>, place it in the zip-lock bag (included in the package) and keep it <strong>refrigerated in the fridge</strong> until shipment.',
+      'ori.tip2':   '\ud83d\udccc Remember: once you notify Joaqu\u00edn Castilla, the courier will come to collect it the next day.',
+
+      // ── nasal.html ─────────────────────────────────────
+      'nas.fig1':   'Swab inserted 1.5\u20133 cm into the nostril and rotated 5 times. Same swab for both nostrils.',
+      'nas.h2':     'Nasal Secretion Collection',
+      'nas.intro':  'In the package you will find a <strong>long screw-cap tube with a red cap</strong>, with a swab attached to the inside of the cap.',
+      'nas.steps':  '\u2705 Step-by-step instructions',
+      'nas.s1':     'Wash your hands thoroughly with soap and water and <strong>dry them very well</strong> before handling the tube and the swab.',
+      'nas.tip1':   '\ud83d\udca1 If you have a lot of nasal congestion, <strong>blow your nose first</strong> before collecting the sample.',
+      'nas.s2':     'With clean, dry hands, <strong>unscrew the cap</strong> that has the swab attached. Always hold it by the cap, <strong>without touching the swab</strong> with your hands or resting it on any surface.',
+      'nas.s3':     'Tilt your head <strong>slightly back</strong> and insert the swab into one nostril between <strong>1.5 and 3 cm</strong> (reaching the back of the nostril, but without forcing it).',
+      'nas.badge':  '\ud83d\udccf Depth: 1.5 \u2013 3 cm',
+      'nas.s4':     '<strong>Gently rotate the swab about 5 times</strong> inside that nostril. Then repeat the same procedure in the <strong>other nostril</strong>, using the <strong>same swab</strong>.',
+      'nas.s5':     'Place the swab back into its <strong>original tube</strong> and <strong>screw the cap on firmly</strong>.',
+      'nas.s6':     'Place the tightly closed tube in the <strong>original plastic bag</strong> and <strong>refrigerate the sample</strong> in the fridge until shipment together with the rest of the samples.'
     }
   };
 
