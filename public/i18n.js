@@ -62,7 +62,27 @@
       'nas.badge':  '\ud83d\udccf Profundidad: 1,5 \u2013 3 cm',
       'nas.s4':     '<strong>Rote suavemente el escobill\u00f3n unas 5 veces</strong> en esa fosa nasal. Luego repita la misma operaci\u00f3n en la <strong>otra fosa nasal</strong>, utilizando el <strong>mismo escobill\u00f3n</strong>.',
       'nas.s5':     'Introduzca el escobill\u00f3n de vuelta en su <strong>tubo original</strong> y <strong>cierre bien la tapa</strong> de rosca.',
-      'nas.s6':     'Meta el tubo bien cerrado en la <strong>bolsa de pl\u00e1stico original</strong> y <strong>refrigere la muestra</strong> en la nevera hasta su env\u00edo junto con el resto de las muestras.'
+      'nas.s6':     'Meta el tubo bien cerrado en la <strong>bolsa de pl\u00e1stico original</strong> y <strong>refrigere la muestra</strong> en la nevera hasta su env\u00edo junto con el resto de las muestras.',
+
+      // ── lagrima.html ───────────────────────────────────
+      'lag.fig1':  'Colocaci\u00f3n de la tira adsorbente bajo el p\u00e1rpado inferior, cerca del rabillo',
+      'lag.h2':    'Recogida de L\u00e1grima',
+      'lag.kit':   '\ud83d\udccb Material incluido en el paquete',
+      'lag.kit1':  '2 tiras adsorbentes<br/>(en sobres)',
+      'lag.kit2':  '2 tubos con tapas<br/>de goma',
+      'lag.kit3':  'Par de guantes<br/>de l\u00e1tex',
+      'lag.alert': '<strong>\u26a0\ufe0f Antes de empezar</strong> La recogida debe hacerse <strong>sin ning\u00fan maquillaje en los ojos</strong>, ya que podr\u00eda contaminar la muestra. Si tiene inflamaci\u00f3n, \u00falcera en la c\u00f3rnea o cualquier otro problema ocular, no realice esta recogida y consulte al equipo investigador.',
+      'lag.steps': '\u2705 Instrucciones paso a paso',
+      'lag.s1':    'P\u00f3ngase los <strong>guantes de l\u00e1tex</strong> antes de abrir los sobres que contienen las tiras de papel adsorbente.',
+      'lag.s2':    'Con los guantes puestos, abra uno de los sobres y haga una <strong>peque\u00f1a doblez en el extremo redondeado</strong> de la tira. Evite manosearla; suj\u00e9tela por la parte inferior.',
+      'lag.s3':    'Eche la cabeza <strong>ligeramente hacia atr\u00e1s</strong>, mire hacia arriba y tire suavemente del p\u00e1rpado inferior hacia abajo. Coloque la parte doblada de la tira <strong>debajo del p\u00e1rpado, hacia el rabillo del ojo</strong> (molesta menos cerca del rabillo que del lagrimal).',
+      'lag.fig2':  'P\u00e1rpado inferior bajado \u2014 tira colocada hacia el rabillo',
+      'lag.s4':    'Una vez colocada, puede <strong>cerrar el ojo o mantenerlo abierto</strong>, parpadeando suavemente para que la tira no se caiga mientras se empapa de fluido lagrimal.',
+      'lag.s5':    'Mantenga la tira en el ojo hasta que se haya <strong>empapado completamente o durante aproximadamente 5 minutos</strong>.',
+      'lag.s6':    'Retire la tira suavemente agarr\u00e1ndola por el extremo inferior e intr\u00f3dúzcala en el <strong>tubo de pl\u00e1stico</strong> (d\u00f3blela si es necesario para que entre del todo). Cierre bien la tapa.',
+      'lag.s7':    'Repita la misma operaci\u00f3n con la <strong>segunda tira en el otro ojo</strong>.',
+      'lag.s8':    'Una vez guardadas las dos tiras en sus tubos, deseche los guantes y meta los tubos cerrados en el <strong>congelador</strong>. Mant\u00e9ngalos congelados hasta el env\u00edo.',
+      'lag.video': '<strong>\u00bfNecesita un ejemplo visual?</strong><br/>Puede ver un v\u00eddeo demostrativo del proceso en el siguiente enlace:<br/><br/><a href="https://www.youtube.com/watch?v=Sn2lqhk_IYc" target="_blank" rel="noopener noreferrer" style="color:#5b21b6; font-weight:700; text-decoration:underline;">\u25b6 Schirmer test \u2014 ver v\u00eddeo</a>'
     },
     en: {
       // ── Compartidos (header / footer) ──────────────────
@@ -123,7 +143,27 @@
       'nas.badge':  '\ud83d\udccf Depth: 1.5 \u2013 3 cm',
       'nas.s4':     '<strong>Gently rotate the swab about 5 times</strong> inside that nostril. Then repeat the same procedure in the <strong>other nostril</strong>, using the <strong>same swab</strong>.',
       'nas.s5':     'Place the swab back into its <strong>original tube</strong> and <strong>screw the cap on firmly</strong>.',
-      'nas.s6':     'Place the tightly closed tube in the <strong>original plastic bag</strong> and <strong>refrigerate the sample</strong> in the fridge until shipment together with the rest of the samples.'
+      'nas.s6':     'Place the tightly closed tube in the <strong>original plastic bag</strong> and <strong>refrigerate the sample</strong> in the fridge until shipment together with the rest of the samples.',
+
+      // ── lagrima.html ───────────────────────────────────
+      'lag.fig1':  'Placement of the absorbent strip under the lower eyelid, near the outer corner',
+      'lag.h2':    'Tear Collection',
+      'lag.kit':   '\ud83d\udccb Material included in the package',
+      'lag.kit1':  '2 absorbent strips<br/>(in envelopes)',
+      'lag.kit2':  '2 tubes with<br/>rubber caps',
+      'lag.kit3':  'A pair of<br/>latex gloves',
+      'lag.alert': '<strong>\u26a0\ufe0f Before you start</strong> Collection must be done <strong>without any eye make-up</strong>, as it could contaminate the sample. If you have inflammation, a corneal ulcer or any other eye problem, do not perform this collection and consult the research team.',
+      'lag.steps': '\u2705 Step-by-step instructions',
+      'lag.s1':    'Put on the <strong>latex gloves</strong> before opening the envelopes containing the absorbent paper strips.',
+      'lag.s2':    'With gloves on, open one of the envelopes and make a <strong>small fold at the rounded end</strong> of the strip. Avoid handling it too much; hold it by the lower part.',
+      'lag.s3':    'Tilt your head <strong>slightly back</strong>, look upward and gently pull the lower eyelid down. Place the folded end of the strip <strong>under the eyelid, towards the outer corner</strong> (it is less uncomfortable near the outer corner than near the inner corner).',
+      'lag.fig2':  'Lower eyelid pulled down \u2014 strip placed towards the outer corner',
+      'lag.s4':    'Once in place, you may <strong>close your eye or keep it open</strong>, blinking gently to prevent the strip from falling out while it absorbs the tear fluid.',
+      'lag.s5':    'Keep the strip in your eye until it is <strong>fully soaked or for approximately 5 minutes</strong>.',
+      'lag.s6':    'Gently remove the strip by grasping it at the lower end and place it in the <strong>plastic tube</strong> (fold it if necessary so it fits completely). Close the cap firmly.',
+      'lag.s7':    'Repeat the same procedure with the <strong>second strip in the other eye</strong>.',
+      'lag.s8':    'Once both strips are stored in their tubes, discard the gloves and place the closed tubes in the <strong>freezer</strong>. Keep them frozen until shipment.',
+      'lag.video': '<strong>Need a visual example?</strong><br/>You can watch a demonstration video of the process at the following link:<br/><br/><a href="https://www.youtube.com/watch?v=Sn2lqhk_IYc" target="_blank" rel="noopener noreferrer" style="color:#5b21b6; font-weight:700; text-decoration:underline;">\u25b6 Schirmer test \u2014 watch video</a>'
     }
   };
 

@@ -50,13 +50,13 @@
   <header>
     <div class="logo">🧪</div>
     <div>
-      <h1>Instrucciones de Recogida de Muestras</h1>
-      <p>Para donantes a domicilio</p>
+      <h1 data-i18n="hdr.title">Instrucciones de Recogida de Muestras</h1>
+      <p data-i18n="hdr.sub">Para donantes a domicilio</p>
     </div>
   </header>
 
   <div class="container">
-    <a class="back-link" href="#" onclick="history.back(); return false;">&#8592; Volver</a>
+    <a class="back-link" href="#" onclick="history.back(); return false;" data-i18n="back">&#8592; Volver</a>
     <div class="instruction-card">
 
       <!-- Ilustración principal -->
@@ -88,15 +88,15 @@
           <!-- Lágrimas -->
           <path d="M44 80 Q40 88 44 94 Q48 88 44 80 Z" fill="#93c5fd" opacity="0.7"/>
         </svg>
-        <figcaption>Colocación de la tira adsorbente bajo el párpado inferior, cerca del rabillo</figcaption>
+        <figcaption data-i18n="lag.fig1">Colocación de la tira adsorbente bajo el párpado inferior, cerca del rabillo</figcaption>
       </figure>
 
-      <h2>Recogida de Lágrima</h2>
+      <h2 data-i18n="lag.h2">Recogida de Lágrima</h2>
 
       <div class="instruction-content">
 
         <!-- Material incluido -->
-        <div class="section-title">📋 Material incluido en el paquete</div>
+        <div class="section-title" data-i18n="lag.kit">📋 Material incluido en el paquete</div>
         <div class="kit-grid">
           <div class="kit-item">
             <svg width="50" height="70" viewBox="0 0 50 70" xmlns="http://www.w3.org/2000/svg">
@@ -105,7 +105,7 @@
               <line x1="14" y1="24" x2="36" y2="24" stroke="#d97706" stroke-width="1"/>
               <line x1="14" y1="30" x2="36" y2="30" stroke="#d97706" stroke-width="1"/>
             </svg>
-            2 tiras adsorbentes<br/>(en sobres)
+            <span data-i18n-html="lag.kit1">2 tiras adsorbentes<br/>(en sobres)</span>
           </div>
           <div class="kit-item">
             <svg width="40" height="80" viewBox="0 0 40 80" xmlns="http://www.w3.org/2000/svg">
@@ -113,7 +113,7 @@
               <rect x="8" y="5" width="24" height="12" rx="4" fill="#0ea5e9"/>
               <rect x="12" y="40" width="16" height="26" rx="0 0 4 4" fill="#bae6fd" opacity="0.7"/>
             </svg>
-            2 tubos con tapas<br/>de goma
+            <span data-i18n-html="lag.kit2">2 tubos con tapas<br/>de goma</span>
           </div>
           <div class="kit-item">
             <svg width="60" height="70" viewBox="0 0 60 70" xmlns="http://www.w3.org/2000/svg">
@@ -121,28 +121,28 @@
               <path d="M5 15 L8 18 L43 53 L40 50 Z" fill="#bbf7d0"/>
               <circle cx="47" cy="43" r="5" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
             </svg>
-            Par de guantes<br/>de látex
+            <span data-i18n-html="lag.kit3">Par de guantes<br/>de látex</span>
           </div>
         </div>
 
-        <div class="alert-box">
+        <div class="alert-box" data-i18n-html="lag.alert">
           <strong>⚠️ Antes de empezar</strong>
           La recogida debe hacerse <strong>sin ningún maquillaje en los ojos</strong>, ya que podría contaminar la muestra. Si tiene inflamación, úlcera en la córnea o cualquier otro problema ocular, no realice esta recogida y consulte al equipo investigador.
         </div>
 
-        <div class="section-title">✅ Instrucciones paso a paso</div>
+        <div class="section-title" data-i18n="lag.steps">✅ Instrucciones paso a paso</div>
         <div class="steps">
 
           <div class="step">
             <div class="step-num">1</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="lag.s1">
               Póngase los <strong>guantes de látex</strong> antes de abrir los sobres que contienen las tiras de papel adsorbente.
             </div>
           </div>
 
           <div class="step">
             <div class="step-num">2</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="lag.s2">
               Con los guantes puestos, abra uno de los sobres y haga una <strong>pequeña doblez en el extremo redondeado</strong> de la tira. Evite manosearla; sujétela por la parte inferior.
             </div>
           </div>
@@ -150,7 +150,7 @@
           <div class="step">
             <div class="step-num">3</div>
             <div class="step-body">
-              Eche la cabeza <strong>ligeramente hacia atrás</strong>, mire hacia arriba y tire suavemente del párpado inferior hacia abajo. Coloque la parte doblada de la tira <strong>debajo del párpado, hacia el rabillo del ojo</strong> (molesta menos cerca del rabillo que del lagrimal).
+              <span data-i18n-html="lag.s3">Eche la cabeza <strong>ligeramente hacia atrás</strong>, mire hacia arriba y tire suavemente del párpado inferior hacia abajo. Coloque la parte doblada de la tira <strong>debajo del párpado, hacia el rabillo del ojo</strong> (molesta menos cerca del rabillo que del lagrimal).</span>
               <figure class="illustration" style="margin-top:12px;">
                 <svg width="180" height="100" viewBox="0 0 180 100" xmlns="http://www.w3.org/2000/svg">
                   <!-- Ojo desde abajo mostrando párpado inferior bajado -->
@@ -165,42 +165,42 @@
                   <rect x="110" y="68" width="5" height="22" rx="2.5" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.2" transform="rotate(-15 112 79)"/>
                   <text x="118" y="85" font-size="9" fill="#0077b6" font-family="sans-serif">↑ rabillo</text>
                 </svg>
-                <figcaption>Párpado inferior bajado — tira colocada hacia el rabillo</figcaption>
+                <figcaption data-i18n="lag.fig2">Párpado inferior bajado — tira colocada hacia el rabillo</figcaption>
               </figure>
             </div>
           </div>
 
           <div class="step">
             <div class="step-num">4</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="lag.s4">
               Una vez colocada, puede <strong>cerrar el ojo o mantenerlo abierto</strong>, parpadeando suavemente para que la tira no se caiga mientras se empapa de fluido lagrimal.
             </div>
           </div>
 
           <div class="step">
             <div class="step-num">5</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="lag.s5">
               Mantenga la tira en el ojo hasta que se haya <strong>empapado completamente o durante aproximadamente 5 minutos</strong>.
             </div>
           </div>
 
           <div class="step">
             <div class="step-num">6</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="lag.s6">
               Retire la tira suavemente agarrándola por el extremo inferior e introdúzcala en el <strong>tubo de plástico</strong> (dóblela si es necesario para que entre del todo). Cierre bien la tapa.
             </div>
           </div>
 
           <div class="step">
             <div class="step-num">7</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="lag.s7">
               Repita la misma operación con la <strong>segunda tira en el otro ojo</strong>.
             </div>
           </div>
 
           <div class="step">
             <div class="step-num">8</div>
-            <div class="step-body">
+            <div class="step-body" data-i18n-html="lag.s8">
               Una vez guardadas las dos tiras en sus tubos, deseche los guantes y meta los tubos cerrados en el <strong>congelador</strong>. Manténgalos congelados hasta el envío.
             </div>
           </div>
@@ -210,7 +210,7 @@
         <!-- Enlace a vídeo -->
         <div class="qr-box">
           <div style="font-size: 2rem;">🎬</div>
-          <p><strong>¿Necesita un ejemplo visual?</strong><br/>
+          <p data-i18n-html="lag.video"><strong>¿Necesita un ejemplo visual?</strong><br/>
           Puede ver un vídeo demostrativo del proceso en el siguiente enlace:<br/><br/>
           <a href="https://www.youtube.com/watch?v=Sn2lqhk_IYc" target="_blank" rel="noopener noreferrer"
              style="color:#5b21b6; font-weight:700; text-decoration:underline;">
@@ -222,6 +222,7 @@
     </div>
   </div>
 
-  <footer>&copy; 2026 &mdash; Instrucciones de Recogida de Muestras para Donantes</footer>
+  <footer data-i18n="footer">&copy; 2026 &mdash; Instrucciones de Recogida de Muestras para Donantes</footer>
+  <script src="/i18n.js"></script>
 </body>
 </html>
