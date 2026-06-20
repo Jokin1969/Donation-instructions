@@ -16,6 +16,17 @@
       'idx.btn1.p':  'Recogida de orina, lágrima, saliva, mucosa nasal y preparación del paquete',
       'idx.btn2.h2': 'Donación estándar',
       'idx.btn2.p':  'Recogida de orina, lágrima, mucosa nasal y preparación del paquete',
+      'idx.poster.btn':  '📄 Descargar cartel con QR',
+      'idx.poster.gen':  'Generando…',
+      // Cartel PDF
+      'poster.kicker':   'INSTRUCCIONES DE RECOGIDA DE MUESTRAS',
+      'poster.title1':   'Donación inicial',
+      'poster.title2':   'Donación estándar',
+      'poster.cta':      'Escanea el código QR con tu móvil',
+      'poster.body':     'Accede a las instrucciones detalladas, paso a paso, para realizar correctamente la recogida de tus muestras en casa y preparar el paquete para su envío.',
+      'poster.hint':     'Abre la cámara de tu teléfono, apunta al código y pulsa el enlace que aparece.',
+      'poster.url':      'O escribe esta dirección en tu navegador:',
+      'poster.footer':   'Si tienes cualquier duda, contacta con el equipo investigador.',
 
       // ── con-saliva.html / sin-saliva.html ──────────────
       'cs.h2':    'Donación inicial',
@@ -149,6 +160,17 @@
       'idx.btn1.p':  'Collection of urine, tear, saliva, nasal mucosa and package preparation',
       'idx.btn2.h2': 'Standard Donation',
       'idx.btn2.p':  'Collection of urine, tear, nasal mucosa and package preparation',
+      'idx.poster.btn':  '📄 Download QR poster',
+      'idx.poster.gen':  'Generating…',
+      // PDF poster
+      'poster.kicker':   'SAMPLE COLLECTION INSTRUCTIONS',
+      'poster.title1':   'Initial Donation',
+      'poster.title2':   'Standard Donation',
+      'poster.cta':      'Scan the QR code with your phone',
+      'poster.body':     'Access the detailed, step-by-step instructions to correctly collect your samples at home and prepare the package for shipment.',
+      'poster.hint':     'Open your phone camera, point it at the code and tap the link that appears.',
+      'poster.url':      'Or type this address into your browser:',
+      'poster.footer':   'If you have any questions, please contact the research team.',
 
       // ── con-saliva.html / sin-saliva.html ──────────────
       'cs.h2':    'Initial Donation',
@@ -319,6 +341,11 @@
 
   // ── Public API ────────────────────────────────────────────────────────────
   window.switchLang = switchLang;
+  window.getLang = getLang;
+  window.i18nText = function (key) {
+    var t = T[getLang()] || T['es'];
+    return t[key] !== undefined ? t[key] : key;
+  };
   window._i18nRegister = function (esKeys, enKeys) {
     Object.assign(T.es, esKeys);
     Object.assign(T.en, enKeys);
