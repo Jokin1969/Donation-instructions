@@ -27,6 +27,7 @@
       'poster.hint':     'Abre la cámara de tu teléfono, apunta al código y pulsa el enlace que aparece.',
       'poster.url':      'O escribe esta dirección en tu navegador:',
       'poster.footer':   'Si tienes cualquier duda, contacta con el equipo investigador.',
+      'poster.phone':    'Teléfono del equipo: +34 618 68 29 20',
 
       // ── con-saliva.html / sin-saliva.html ──────────────
       'cs.h2':    'Donación inicial',
@@ -125,7 +126,7 @@
       'pak.li5':     'Bolsa de pl\u00e1stico con cierre f\u00e1cil, para introducir el bote de orina una vez tomada la muestra.',
       'pak.li6':     'Bolsa de pl\u00e1stico con las tiras de papel para recogida de l\u00e1grima, 2 tubos con tapa de rosca para su almacenamiento, y un par de guantes de l\u00e1tex desechables.',
       'pak.li7':     'Tubo de pl\u00e1stico con escobill\u00f3n para toma de muestra de mucosa nasal.',
-      'pak.li8':     'C\u00f3digo QR impreso para acceder a las instrucciones de toma de muestras y env\u00edo, y <strong>etiqueta autoadhesiva</strong> con la direcci\u00f3n de env\u00edo del paquete tras la recogida de muestras, a nombre de Carol Arist\u00imum\u00f1o.',
+      'pak.li8':     'C\u00f3digo QR impreso para acceder a las instrucciones de toma de muestras y env\u00edo, y <strong>etiqueta autoadhesiva</strong> con la direcci\u00f3n de env\u00edo del paquete tras la recogida de muestras, a nombre de Carol Arist\u00edmu\u00f1o.',
       'pak.steps':   '\u2705 Instrucciones paso a paso',
       'pak.s1':      'Extraiga todo el contenido del paquete y <strong>escanee el c\u00f3digo QR</strong> que le dirigir\u00e1 a las instrucciones para la toma de muestras y preparaci\u00f3n y env\u00edo del paquete.',
       'pak.s2':      'Meta el acumulador de fr\u00edo (frigol\u00edn o bolsa de gel) en el <strong>congelador</strong> para tenerlo preparado el d\u00eda que tenga que preparar el paquete con las muestras.',
@@ -171,6 +172,7 @@
       'poster.hint':     'Open your phone camera, point it at the code and tap the link that appears.',
       'poster.url':      'Or type this address into your browser:',
       'poster.footer':   'If you have any questions, please contact the research team.',
+      'poster.phone':    'Team phone: +34 618 68 29 20',
 
       // ── con-saliva.html / sin-saliva.html ──────────────
       'cs.h2':    'Initial Donation',

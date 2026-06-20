@@ -104,10 +104,15 @@
     doc.textWithLink(url, pageW / 2, y, { align: 'center', url: url });
 
     // ── Pie de página ─────────────────────────────────────────────────────────
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(13);
+    doc.setTextColor(accent[0], accent[1], accent[2]);
+    doc.text(t('poster.phone'), pageW / 2, pageH - 22, { align: 'center' });
+
     doc.setFont('helvetica', 'italic');
     doc.setFontSize(10);
     doc.setTextColor(113, 128, 150);
-    doc.text(t('poster.footer'), pageW / 2, pageH - 16, { align: 'center' });
+    doc.text(t('poster.footer'), pageW / 2, pageH - 14, { align: 'center' });
 
     doc.save('cartel-' + type + '.pdf');
   }
