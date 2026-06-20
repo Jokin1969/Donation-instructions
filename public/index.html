@@ -65,6 +65,38 @@
       margin-top: 4px;
     }
 
+    .macro-cell {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .macro-cell .macro-btn { flex: 1; }
+
+    .poster-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 16px;
+      border: 2px solid currentColor;
+      border-radius: 12px;
+      background: white;
+      font-family: inherit;
+      font-size: 0.92rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+    .poster-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+    .poster-btn:disabled { opacity: 0.6; cursor: default; transform: none; box-shadow: none; }
+    .poster-btn.con-saliva { color: #0077b6; }
+    .poster-btn.con-saliva:hover { background: #f0f9ff; }
+    .poster-btn.sin-saliva { color: #059669; }
+    .poster-btn.sin-saliva:hover { background: #f0fdf4; }
+
     @media (max-width: 540px) {
       .macro-grid { grid-template-columns: 1fr; }
       .landing-intro { padding: 20px 18px; }
@@ -93,19 +125,25 @@
 
     <div class="macro-grid">
 
-      <a class="macro-btn con-saliva" href="/con-saliva">
-        <div class="macro-icon">🧬</div>
-        <h2 data-i18n="idx.btn1.h2">Donación inicial</h2>
-        <p data-i18n="idx.btn1.p">Recogida de orina, lágrima, saliva, mucosa nasal y preparación del paquete</p>
-        <div class="macro-arrow">&#8594;</div>
-      </a>
+      <div class="macro-cell">
+        <a class="macro-btn con-saliva" href="/con-saliva">
+          <div class="macro-icon">🧬</div>
+          <h2 data-i18n="idx.btn1.h2">Donación inicial</h2>
+          <p data-i18n="idx.btn1.p">Recogida de orina, lágrima, saliva, mucosa nasal y preparación del paquete</p>
+          <div class="macro-arrow">&#8594;</div>
+        </a>
+        <button type="button" class="poster-btn con-saliva" data-poster="con-saliva" data-i18n="idx.poster.btn">📄 Descargar cartel con QR</button>
+      </div>
 
-      <a class="macro-btn sin-saliva" href="/sin-saliva">
-        <div class="macro-icon">🔬</div>
-        <h2 data-i18n="idx.btn2.h2">Donación estándar</h2>
-        <p data-i18n="idx.btn2.p">Recogida de orina, lágrima, mucosa nasal y preparación del paquete</p>
-        <div class="macro-arrow">&#8594;</div>
-      </a>
+      <div class="macro-cell">
+        <a class="macro-btn sin-saliva" href="/sin-saliva">
+          <div class="macro-icon">🔬</div>
+          <h2 data-i18n="idx.btn2.h2">Donación estándar</h2>
+          <p data-i18n="idx.btn2.p">Recogida de orina, lágrima, mucosa nasal y preparación del paquete</p>
+          <div class="macro-arrow">&#8594;</div>
+        </a>
+        <button type="button" class="poster-btn sin-saliva" data-poster="sin-saliva" data-i18n="idx.poster.btn">📄 Descargar cartel con QR</button>
+      </div>
 
     </div>
   </div>
@@ -115,5 +153,8 @@
   </footer>
 
   <script src="/i18n.js"></script>
+  <script src="/vendor/jspdf.umd.min.js"></script>
+  <script src="/vendor/qrcode-generator.js"></script>
+  <script src="/poster.js"></script>
 </body>
 </html>
