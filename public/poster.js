@@ -35,7 +35,7 @@
     doc.setTextColor(255, 255, 255);
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(11);
-    doc.text(t('poster.kicker'), pageW / 2, 20, { align: 'center', charSpace: 0.4 });
+    doc.text(t('poster.kicker'), pageW / 2, 20, { align: 'center' });
 
     doc.setFontSize(26);
     doc.text(t(cfg.titleKey), pageW / 2, 34, { align: 'center' });
