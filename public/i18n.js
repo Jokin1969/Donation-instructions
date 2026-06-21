@@ -19,7 +19,7 @@
       'idx.poster.btn':  '📄 Descargar cartel con QR',
       'idx.poster.gen':  'Generando…',
       // Cartel PDF
-      'poster.kicker':   'INSTRUCCIONES DE RECOGIDA DE MUESTRAS',
+      'poster.kicker':   'INSTRUCCIONES PARA LA RECOGIDA DE MUESTRAS',
       'poster.title1':   'Donación inicial',
       'poster.title2':   'Donación estándar',
       'poster.cta':      'Escanea el código QR con tu móvil',
