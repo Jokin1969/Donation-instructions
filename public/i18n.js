@@ -111,22 +111,22 @@
       'sal.s5':    'Utilice el <strong>tap\u00f3n peque\u00f1o suelto</strong> para cerrar firmemente el tubo, sin tocar la boca del tubo directamente con las manos.',
       'sal.s6':    'Con el tubo bien cerrado, <strong>ag\u00edtelo durante 5\u201310 segundos</strong> para que se mezclen bien la saliva y el l\u00edquido de la tapa.',
       'sal.s7':    'Pegue la <strong>etiqueta autoadhesiva</strong> (pegada a la cajita de pl\u00e1stico) con su nombre, c\u00f3digo de barras y c\u00f3digo del Biobanco sobre el tubo. Vuelva a colocar el tubo en su cajita de pl\u00e1stico original.',
-      'sal.s8':    'Meta la caja de pl\u00e1stico en el <strong>sobre acolchado peque\u00f1o</strong> (ya viene con la etiqueta de destino a la atenci\u00f3n de \u00c1frica Manero) y cons\u00e9rvela a <strong>temperatura ambiente</strong> hasta la recogida. No hace falta refrigerar esta muestra.',
-      'sal.tip8':  '\ud83d\udccc <strong>Env\u00edo conjunto (varios familiares):</strong> Si han recibido varios kits, meta todas las cajitas en un sobre acolchado grande o en la misma caja en la que las recibieron, usando la etiqueta grande de destino incluida a la atenci\u00f3n de \u00c1frica Manero.',
+      'sal.s8':    'Meta la caja de pl\u00e1stico en el <strong>sobre acolchado peque\u00f1o</strong> (ya viene con la etiqueta de destino a la atenci\u00f3n de {{respSaliva}}) y cons\u00e9rvela a <strong>temperatura ambiente</strong> hasta la recogida. No hace falta refrigerar esta muestra.',
+      'sal.tip8':  '\ud83d\udccc <strong>Env\u00edo conjunto (varios familiares):</strong> Si han recibido varios kits, meta todas las cajitas en un sobre acolchado grande o en la misma caja en la que las recibieron, usando la etiqueta grande de destino incluida a la atenci\u00f3n de {{respSaliva}}.',
 
       // ── paquete.html / paquete-sin-saliva.html ─────────
       'pak.h2':      'Instrucciones para el Paquete y Env\u00edo',
       'pak.intro':   'A continuaci\u00f3n se detalla todo el proceso que debe seguir para la toma de muestras, as\u00ed como para su env\u00edo.',
       'pak.alert':   '<strong>\u26a0\ufe0f Importante</strong> Este mismo paquete le ser\u00e1 recogido en la direcci\u00f3n postal indicada por usted cuando haya realizado la toma de muestras, por lo que <strong>trate de da\u00f1arlo lo m\u00ednimo posible</strong> y no descarte ning\u00fan contenido, ya que la mayor\u00eda de elementos deber\u00e1n ser devueltos tal y como se indica en este documento.',
       'pak.contents':'📋 Contenido del paquete de porexp\u00e1n',
-      'pak.li1':     'Sobre acolchado con la direcci\u00f3n de destino (abierto), a la atenci\u00f3n de <strong>\u00c1frica Manero Ru\u00edz de Azua</strong>, para el env\u00edo de la muestra de saliva.',
+      'pak.li1':     'Sobre acolchado con la direcci\u00f3n de destino (abierto), a la atenci\u00f3n de <strong>{{respSaliva}}</strong>, para el env\u00edo de la muestra de saliva.',
       'pak.li2':     'Acumulador de fr\u00edo (frigol\u00edn o bolsa de gel para congelar), que mantendr\u00e1 las muestras refrigeradas en el env\u00edo de vuelta. Lo debe haber recibido <strong>descongelado</strong> (a temperatura ambiente).',
       'pak.li3':     'Pl\u00e1stico de burbujas, para evitar el contacto directo entre las muestras y la bolsa de gel congelada, y proteger las muestras durante el env\u00edo.',
       'pak.li4':     'Bote con tapa roja etiquetado con su nombre y apellidos, para la muestra de orina.',
       'pak.li5':     'Bolsa de pl\u00e1stico con cierre f\u00e1cil, para introducir el bote de orina una vez tomada la muestra.',
       'pak.li6':     'Bolsa de pl\u00e1stico con las tiras de papel para recogida de l\u00e1grima, 2 tubos con tapa de rosca para su almacenamiento, y un par de guantes de l\u00e1tex desechables.',
       'pak.li7':     'Tubo de pl\u00e1stico con escobill\u00f3n para toma de muestra de mucosa nasal.',
-      'pak.li8':     'C\u00f3digo QR impreso para acceder a las instrucciones de toma de muestras y env\u00edo, y <strong>etiqueta autoadhesiva</strong> con la direcci\u00f3n de env\u00edo del paquete tras la recogida de muestras, a nombre de Carol Arist\u00edmu\u00f1o.',
+      'pak.li8':     'C\u00f3digo QR impreso para acceder a las instrucciones de toma de muestras y env\u00edo, y <strong>etiqueta autoadhesiva</strong> con la direcci\u00f3n de env\u00edo del paquete tras la recogida de muestras, a nombre de {{respOrina}}.',
       'pak.steps':   '\u2705 Instrucciones paso a paso',
       'pak.s1':      'Extraiga todo el contenido del paquete y <strong>escanee el c\u00f3digo QR</strong> que le dirigir\u00e1 a las instrucciones para la toma de muestras y preparaci\u00f3n y env\u00edo del paquete.',
       'pak.s2':      'Meta el acumulador de fr\u00edo (frigol\u00edn o bolsa de gel) en el <strong>congelador</strong> para tenerlo preparado el d\u00eda que tenga que preparar el paquete con las muestras.',
@@ -137,11 +137,11 @@
       'pak.s6intro': 'Introduzca en la caja de porexp\u00e1n blanco los siguientes elementos, <strong>en este orden</strong>:',
       'pak.s6li1':   '\ud83e\uddca Acumulador de fr\u00edo (frigol\u00edn o bolsa de gel) <strong>congelado</strong>, en el fondo.',
       'pak.s6li2':   '\ud83e\udde7 Pl\u00e1stico de burbujas, entre el acumulador de fr\u00edo y las muestras.',
-      'pak.s6li3':   '\u2709\ufe0f Sobre acolchado (a la atenci\u00f3n de \u00c1frica Manero) con la cajita de pl\u00e1stico con la muestra de saliva debidamente etiquetada.',
+      'pak.s6li3':   '\u2709\ufe0f Sobre acolchado (a la atenci\u00f3n de {{respSaliva}}) con la cajita de pl\u00e1stico con la muestra de saliva debidamente etiquetada.',
       'pak.s6li4':   '\ud83d\ude9d Muestra de orina en su correspondiente bolsa de cierre f\u00e1cil, cerrada.',
       'pak.s6li5':   '\ud83d\udc41\ufe0f Muestras de l\u00e1grimas en sus tubos con tap\u00f3n de rosca y en su bolsita de pl\u00e1stico.',
       'pak.s6li6':   '\ud83d\udc43 Muestra de mucosa nasal en su correspondiente bolsa de pl\u00e1stico.',
-      'pak.s7':      '<strong>Cierre</strong> la caja de porexp\u00e1n con precinto o cinta de embalar, pegue la <strong>etiqueta de direcci\u00f3n</strong> (a la atenci\u00f3n de Carol Arist\u00edmu\u00f1o, del Biobanco Vasco) en el exterior, y entregue la caja al transportista encargado de la recogida.',
+      'pak.s7':      '<strong>Cierre</strong> la caja de porexp\u00e1n con precinto o cinta de embalar, pegue la <strong>etiqueta de direcci\u00f3n</strong> (a la atenci\u00f3n de {{respOrina}}, del Biobanco Vasco) en el exterior, y entregue la caja al transportista encargado de la recogida.',
       'pak.note':    '<strong>\ud83d\udccc Nota</strong> Si no dispone de cinta de embalar, com\u00fanicaselo a Joaqu\u00edn Castilla para que el transportista lleve este material cuando vaya a recoger el paquete.',
 
       // ── paquete-sin-saliva.html (diferencias) ──────────
@@ -256,22 +256,22 @@
       'sal.s5':    'Use the <strong>small loose stopper</strong> to firmly close the tube, without touching the tube opening directly with your hands.',
       'sal.s6':    'With the tube tightly closed, <strong>shake it for 5\u201310 seconds</strong> so that the saliva and the liquid from the cap mix well.',
       'sal.s7':    'Stick the <strong>self-adhesive label</strong> (attached to the plastic box) with your name, barcode and Biobank code onto the tube. Place the tube back in its original plastic box.',
-      'sal.s8':    'Place the plastic box in the <strong>small padded envelope</strong> (already labelled for the attention of \u00c1frica Manero) and keep it at <strong>room temperature</strong> until collection. This sample does not need to be refrigerated.',
-      'sal.tip8':  '\ud83d\udccc <strong>Group shipment (several family members):</strong> If you have received several kits, place all the boxes in a large padded envelope or in the same box in which you received them, using the large destination label included for the attention of \u00c1frica Manero.',
+      'sal.s8':    'Place the plastic box in the <strong>small padded envelope</strong> (already labelled for the attention of {{respSaliva}}) and keep it at <strong>room temperature</strong> until collection. This sample does not need to be refrigerated.',
+      'sal.tip8':  '\ud83d\udccc <strong>Group shipment (several family members):</strong> If you have received several kits, place all the boxes in a large padded envelope or in the same box in which you received them, using the large destination label included for the attention of {{respSaliva}}.',
 
       // ── paquete.html / paquete-sin-saliva.html ─────────
       'pak.h2':      'Package and Shipment Instructions',
       'pak.intro':   'Below is a detailed description of the entire process you must follow for sample collection as well as for shipment.',
       'pak.alert':   '<strong>\u26a0\ufe0f Important</strong> This same package will be collected from the postal address you indicated once you have collected your samples, so please <strong>try to damage it as little as possible</strong> and do not discard any contents, as most items must be returned as indicated in this document.',
       'pak.contents':'\ud83d\udccb Contents of the polystyrene box',
-      'pak.li1':     'Padded envelope with the destination address (open), for the attention of <strong>\u00c1frica Manero Ru\u00edz de Azua</strong>, for shipping the saliva sample.',
+      'pak.li1':     'Padded envelope with the destination address (open), for the attention of <strong>{{respSaliva}}</strong>, for shipping the saliva sample.',
       'pak.li2':     'Cold pack (gel bag for freezing) that will keep the samples refrigerated on the return shipment. You should have received it <strong>unfrozen</strong> (at room temperature).',
       'pak.li3':     'Bubble wrap, to prevent direct contact between the samples and the frozen gel bag, and to protect the samples during shipment.',
       'pak.li4':     'Red-capped container labelled with your name and surname, for the urine sample.',
       'pak.li5':     'Zip-lock plastic bag, to place the urine container in once the sample has been taken.',
       'pak.li6':     'Plastic bag with paper strips for tear collection, 2 screw-cap tubes for storage, and a pair of disposable latex gloves.',
       'pak.li7':     'Plastic tube with swab for nasal mucosa sample collection.',
-      'pak.li8':     'Printed QR code to access the sample collection and shipment instructions, and a <strong>self-adhesive label</strong> with the package shipping address after sample collection, addressed to Carol Arist\u00edmu\u00f1o.',
+      'pak.li8':     'Printed QR code to access the sample collection and shipment instructions, and a <strong>self-adhesive label</strong> with the package shipping address after sample collection, addressed to {{respOrina}}.',
       'pak.steps':   '\u2705 Step-by-step instructions',
       'pak.s1':      'Remove all contents from the package and <strong>scan the QR code</strong> which will direct you to the sample collection, package preparation and shipment instructions.',
       'pak.s2':      'Place the cold pack (gel bag) in the <strong>freezer</strong> so it is ready for the day you need to prepare the package with the samples.',
@@ -282,11 +282,11 @@
       'pak.s6intro': 'Place the following items in the white polystyrene box, <strong>in this order</strong>:',
       'pak.s6li1':   '\ud83e\uddca Cold pack (gel bag) <strong>frozen</strong>, at the bottom.',
       'pak.s6li2':   '\ud83e\udde7 Bubble wrap, between the cold pack and the samples.',
-      'pak.s6li3':   '\u2709\ufe0f Padded envelope (for the attention of \u00c1frica Manero) with the properly labelled plastic box containing the saliva sample.',
+      'pak.s6li3':   '\u2709\ufe0f Padded envelope (for the attention of {{respSaliva}}) with the properly labelled plastic box containing the saliva sample.',
       'pak.s6li4':   '\ud83d\ude9d Urine sample in its corresponding zip-lock bag, sealed.',
       'pak.s6li5':   '\ud83d\udc41\ufe0f Tear samples in their screw-cap tubes inside their plastic bag.',
       'pak.s6li6':   '\ud83d\udc43 Nasal mucosa sample in its corresponding plastic bag.',
-      'pak.s7':      '<strong>Close</strong> the polystyrene box with tape or packing tape, stick the <strong>address label</strong> (for the attention of Carol Arist\u00edmu\u00f1o, of the Basque Biobank) on the outside, and hand the box to the courier responsible for the collection.',
+      'pak.s7':      '<strong>Close</strong> the polystyrene box with tape or packing tape, stick the <strong>address label</strong> (for the attention of {{respOrina}}, of the Basque Biobank) on the outside, and hand the box to the courier responsible for the collection.',
       'pak.note':    '<strong>\ud83d\udccc Note</strong> If you do not have packing tape, let Joaqu\u00edn Castilla know so that the courier can bring this material when coming to collect the package.',
 
       // ── paquete-sin-saliva.html (differences) ──────────
@@ -297,6 +297,33 @@
 
   // ── Engine ────────────────────────────────────────────────────────────────
 
+  // Nombres de las personas responsables. Se rellenan desde /api/config (servidor)
+  // y se inyectan en los textos mediante los marcadores {{respOrina}} / {{respSaliva}}.
+  // Los valores de aquí son sólo el respaldo si la configuración no carga.
+  var CONFIG = {
+    respOrina:  'Joaquín Castilla',
+    respSaliva: 'Guiomar Pérez de Nanclares'
+  };
+
+  function interpolate(str) {
+    return String(str)
+      .replace(/\{\{\s*respOrina\s*\}\}/g, CONFIG.respOrina)
+      .replace(/\{\{\s*respSaliva\s*\}\}/g, CONFIG.respSaliva);
+  }
+
+  function loadConfig() {
+    if (typeof fetch !== 'function') return;
+    fetch('/api/config')
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (c) {
+        if (!c) return;
+        if (c.respOrina)  CONFIG.respOrina  = c.respOrina;
+        if (c.respSaliva) CONFIG.respSaliva = c.respSaliva;
+        applyLang(getLang());   // re-render con los nombres ya cargados
+      })
+      .catch(function () { /* sin conexión: se mantienen los valores por defecto */ });
+  }
+
   function getLang() {
     return localStorage.getItem('lang') || 'es';
   }
@@ -306,12 +333,12 @@
 
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       var key = el.getAttribute('data-i18n');
-      if (t[key] !== undefined) el.textContent = t[key];
+      if (t[key] !== undefined) el.textContent = interpolate(t[key]);
     });
 
     document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
       var key = el.getAttribute('data-i18n-html');
-      if (t[key] !== undefined) el.innerHTML = t[key];
+      if (t[key] !== undefined) el.innerHTML = interpolate(t[key]);
     });
 
     document.querySelectorAll('.lang-btn').forEach(function (btn) {
@@ -339,6 +366,7 @@
       header.appendChild(switcher);
     }
     applyLang(getLang());
+    loadConfig();
   });
 
   // ── Public API ────────────────────────────────────────────────────────────
@@ -346,7 +374,7 @@
   window.getLang = getLang;
   window.i18nText = function (key) {
     var t = T[getLang()] || T['es'];
-    return t[key] !== undefined ? t[key] : key;
+    return interpolate(t[key] !== undefined ? t[key] : key);
   };
   window._i18nRegister = function (esKeys, enKeys) {
     Object.assign(T.es, esKeys);
