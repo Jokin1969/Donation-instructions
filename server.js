@@ -19,7 +19,9 @@ const DEFAULT_CONFIG = {
   respOrina:      process.env.RESP_ORINA       || 'Carol Aristimuño',
   respSaliva:     process.env.RESP_SALIVA      || 'Guiomar Pérez de Nanclares',
   respSalivaAddr: process.env.RESP_SALIVA_ADDR ||
-    'Hospital Universitario Cruces - IIS Biobizkaia\nEdificio Bio 3, 1ª planta\nPlaza de Cruces 12\nCruces - Barakaldo\n48903, Bizkaia\nTelf. +34 946006014'
+    'Hospital Universitario Cruces - IIS Biobizkaia\nEdificio Bio 3, 1ª planta\nPlaza de Cruces 12\nCruces - Barakaldo\n48903, Bizkaia\nTelf. +34 946006014',
+  pkgAddr: process.env.PKG_ADDR ||
+    'Euskal Biobankua / Biobanco Vasco\nIIS Bioaraba / OSI Araba\nArabako Unibertsitate Ospitaleko Nodoa / Nodo Hospital Universitario Araba\nC/ Jose Atxotegi, s/n\n01009 Vitoria-Gasteiz\nT +34 945 007 000 (Ext. 5106)'
 };
 
 // Contraseña para editar los nombres. CÁMBIALA definiendo ADMIN_PASSWORD en el
@@ -32,7 +34,8 @@ function readConfig() {
     return {
       respOrina:      typeof saved.respOrina      === 'string' && saved.respOrina.trim()      ? saved.respOrina      : DEFAULT_CONFIG.respOrina,
       respSaliva:     typeof saved.respSaliva     === 'string' && saved.respSaliva.trim()     ? saved.respSaliva     : DEFAULT_CONFIG.respSaliva,
-      respSalivaAddr: typeof saved.respSalivaAddr === 'string' && saved.respSalivaAddr.trim() ? saved.respSalivaAddr : DEFAULT_CONFIG.respSalivaAddr
+      respSalivaAddr: typeof saved.respSalivaAddr === 'string' && saved.respSalivaAddr.trim() ? saved.respSalivaAddr : DEFAULT_CONFIG.respSalivaAddr,
+      pkgAddr:        typeof saved.pkgAddr        === 'string' && saved.pkgAddr.trim()        ? saved.pkgAddr        : DEFAULT_CONFIG.pkgAddr
     };
   } catch (e) {
     return Object.assign({}, DEFAULT_CONFIG);
@@ -58,10 +61,11 @@ app.post('/api/config', (req, res) => {
   const respOrina      = (body.respOrina      || '').trim();
   const respSaliva     = (body.respSaliva     || '').trim();
   const respSalivaAddr = (body.respSalivaAddr || '').trim();
-  if (!respOrina || !respSaliva || !respSalivaAddr) {
+  const pkgAddr        = (body.pkgAddr        || '').trim();
+  if (!respOrina || !respSaliva || !respSalivaAddr || !pkgAddr) {
     return res.status(400).json({ error: 'Todos los campos son obligatorios.' });
   }
-  const cfg = { respOrina, respSaliva, respSalivaAddr };
+  const cfg = { respOrina, respSaliva, respSalivaAddr, pkgAddr };
   try {
     writeConfig(cfg);
   } catch (e) {

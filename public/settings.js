@@ -62,6 +62,8 @@
           '<input type="text" id="set-saliva" autocomplete="off"></label>' +
         '<label>Dirección de destino del sobre de saliva (una línea por renglón)' +
           '<textarea id="set-saliva-addr" autocomplete="off"></textarea></label>' +
+        '<label>Dirección de envío del paquete (una línea por renglón)' +
+          '<textarea id="set-pkg-addr" autocomplete="off"></textarea></label>' +
         '<label>Contraseña de administración' +
           '<input type="password" id="set-pass" autocomplete="off"></label>' +
         '<div class="settings-msg" id="set-msg"></div>' +
@@ -75,6 +77,7 @@
     var inOrina  = overlay.querySelector('#set-orina');
     var inSaliva = overlay.querySelector('#set-saliva');
     var inAddr   = overlay.querySelector('#set-saliva-addr');
+    var inPkg    = overlay.querySelector('#set-pkg-addr');
     var inPass   = overlay.querySelector('#set-pass');
     var msg      = overlay.querySelector('#set-msg');
     var saveBtn  = overlay.querySelector('#set-save');
@@ -93,6 +96,7 @@
           inOrina.value  = c.respOrina      || '';
           inSaliva.value = c.respSaliva     || '';
           inAddr.value   = c.respSalivaAddr || '';
+          inPkg.value    = c.pkgAddr        || '';
         })
         .catch(function () { /* sin conexión */ });
       overlay.hidden = false;
@@ -109,9 +113,10 @@
         respOrina:      inOrina.value.trim(),
         respSaliva:     inSaliva.value.trim(),
         respSalivaAddr: inAddr.value.trim(),
+        pkgAddr:        inPkg.value.trim(),
         password:       inPass.value
       };
-      if (!body.respOrina || !body.respSaliva || !body.respSalivaAddr) { showMsg('Todos los campos son obligatorios.', true); return; }
+      if (!body.respOrina || !body.respSaliva || !body.respSalivaAddr || !body.pkgAddr) { showMsg('Todos los campos son obligatorios.', true); return; }
       if (!body.password) { showMsg('Introduce la contraseña.', true); return; }
 
       saveBtn.disabled = true;
