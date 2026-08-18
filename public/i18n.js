@@ -126,7 +126,7 @@
       'pak.li5':     'Bolsa de pl\u00e1stico con cierre f\u00e1cil, para introducir el bote de orina una vez tomada la muestra.',
       'pak.li6':     'Bolsa de pl\u00e1stico con las tiras de papel para recogida de l\u00e1grima, 2 tubos con tapa de rosca para su almacenamiento, y un par de guantes de l\u00e1tex desechables.',
       'pak.li7':     'Tubo de pl\u00e1stico con escobill\u00f3n para toma de muestra de mucosa nasal.',
-      'pak.li8':     'C\u00f3digo QR impreso para acceder a las instrucciones de toma de muestras y env\u00edo, y <strong>etiqueta autoadhesiva</strong> con la direcci\u00f3n de env\u00edo del paquete tras la recogida de muestras, a nombre de {{respOrina}}.',
+      'pak.li8':     'C\u00f3digo QR impreso para acceder a las instrucciones, y <strong>etiqueta autoadhesiva</strong> con la direcci\u00f3n de env\u00edo del paquete (para pegar tras la recogida de muestras), dirigida a:<br><strong>{{respOrina}}</strong><br>{{pkgAddr}}',
       'pak.steps':   '\u2705 Instrucciones paso a paso',
       'pak.s1':      'Extraiga todo el contenido del paquete y <strong>escanee el c\u00f3digo QR</strong> que le dirigir\u00e1 a las instrucciones para la toma de muestras y preparaci\u00f3n y env\u00edo del paquete.',
       'pak.s2':      'Meta el acumulador de fr\u00edo (frigol\u00edn o bolsa de gel) en el <strong>congelador</strong> para tenerlo preparado el d\u00eda que tenga que preparar el paquete con las muestras.',
@@ -271,7 +271,7 @@
       'pak.li5':     'Zip-lock plastic bag, to place the urine container in once the sample has been taken.',
       'pak.li6':     'Plastic bag with paper strips for tear collection, 2 screw-cap tubes for storage, and a pair of disposable latex gloves.',
       'pak.li7':     'Plastic tube with swab for nasal mucosa sample collection.',
-      'pak.li8':     'Printed QR code to access the sample collection and shipment instructions, and a <strong>self-adhesive label</strong> with the package shipping address after sample collection, addressed to {{respOrina}}.',
+      'pak.li8':     'Printed QR code to access the instructions, and a <strong>self-adhesive label</strong> with the package shipping address (to be attached after sample collection), addressed to:<br><strong>{{respOrina}}</strong><br>{{pkgAddr}}',
       'pak.steps':   '\u2705 Step-by-step instructions',
       'pak.s1':      'Remove all contents from the package and <strong>scan the QR code</strong> which will direct you to the sample collection, package preparation and shipment instructions.',
       'pak.s2':      'Place the cold pack (gel bag) in the <strong>freezer</strong> so it is ready for the day you need to prepare the package with the samples.',
@@ -304,14 +304,16 @@
   var CONFIG = {
     respOrina:      'Carol Aristimuño',
     respSaliva:     'Guiomar Pérez de Nanclares',
-    respSalivaAddr: 'Hospital Universitario Cruces - IIS Biobizkaia\nEdificio Bio 3, 1ª planta\nPlaza de Cruces 12\nCruces - Barakaldo\n48903, Bizkaia\nTelf. +34 946006014'
+    respSalivaAddr: 'Hospital Universitario Cruces - IIS Biobizkaia\nEdificio Bio 3, 1ª planta\nPlaza de Cruces 12\nCruces - Barakaldo\n48903, Bizkaia\nTelf. +34 946006014',
+    pkgAddr:        'Euskal Biobankua / Biobanco Vasco\nIIS Bioaraba / OSI Araba\nArabako Unibertsitate Ospitaleko Nodoa / Nodo Hospital Universitario Araba\nC/ Jose Atxotegi, s/n\n01009 Vitoria-Gasteiz\nT +34 945 007 000 (Ext. 5106)'
   };
 
   function interpolate(str) {
     return String(str)
       .replace(/\{\{\s*respOrina\s*\}\}/g, CONFIG.respOrina)
       .replace(/\{\{\s*respSaliva\s*\}\}/g, CONFIG.respSaliva)
-      .replace(/\{\{\s*salivaAddr\s*\}\}/g, String(CONFIG.respSalivaAddr).replace(/\n/g, '<br>'));
+      .replace(/\{\{\s*salivaAddr\s*\}\}/g, String(CONFIG.respSalivaAddr).replace(/\n/g, '<br>'))
+      .replace(/\{\{\s*pkgAddr\s*\}\}/g, String(CONFIG.pkgAddr).replace(/\n/g, '<br>'));
   }
 
   function loadConfig() {
@@ -323,6 +325,7 @@
         if (c.respOrina)      CONFIG.respOrina      = c.respOrina;
         if (c.respSaliva)     CONFIG.respSaliva     = c.respSaliva;
         if (c.respSalivaAddr) CONFIG.respSalivaAddr = c.respSalivaAddr;
+        if (c.pkgAddr)        CONFIG.pkgAddr        = c.pkgAddr;
         applyLang(getLang());   // re-render con los datos ya cargados
       })
       .catch(function () { /* sin conexión: se mantienen los valores por defecto */ });
