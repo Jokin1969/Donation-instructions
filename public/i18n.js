@@ -119,7 +119,7 @@
       'pak.intro':   'A continuaci\u00f3n se detalla todo el proceso que debe seguir para la toma de muestras, as\u00ed como para su env\u00edo.',
       'pak.alert':   '<strong>\u26a0\ufe0f Importante</strong> Este mismo paquete le ser\u00e1 recogido en la direcci\u00f3n postal indicada por usted cuando haya realizado la toma de muestras, por lo que <strong>trate de da\u00f1arlo lo m\u00ednimo posible</strong> y no descarte ning\u00fan contenido, ya que la mayor\u00eda de elementos deber\u00e1n ser devueltos tal y como se indica en este documento.',
       'pak.contents':'📋 Contenido del paquete de porexp\u00e1n',
-      'pak.li1':     'Sobre acolchado con la direcci\u00f3n de destino (abierto), a la atenci\u00f3n de <strong>{{respSaliva}}</strong>, para el env\u00edo de la muestra de saliva.',
+      'pak.li1':     'Sobre acolchado para el env\u00edo de la muestra de saliva, <strong>con la etiqueta de direcci\u00f3n ya pegada</strong>, dirigido a:<br><strong>{{respSaliva}}</strong><br>{{salivaAddr}}',
       'pak.li2':     'Acumulador de fr\u00edo (frigol\u00edn o bolsa de gel para congelar), que mantendr\u00e1 las muestras refrigeradas en el env\u00edo de vuelta. Lo debe haber recibido <strong>descongelado</strong> (a temperatura ambiente).',
       'pak.li3':     'Pl\u00e1stico de burbujas, para evitar el contacto directo entre las muestras y la bolsa de gel congelada, y proteger las muestras durante el env\u00edo.',
       'pak.li4':     'Bote con tapa roja etiquetado con su nombre y apellidos, para la muestra de orina.',
@@ -264,7 +264,7 @@
       'pak.intro':   'Below is a detailed description of the entire process you must follow for sample collection as well as for shipment.',
       'pak.alert':   '<strong>\u26a0\ufe0f Important</strong> This same package will be collected from the postal address you indicated once you have collected your samples, so please <strong>try to damage it as little as possible</strong> and do not discard any contents, as most items must be returned as indicated in this document.',
       'pak.contents':'\ud83d\udccb Contents of the polystyrene box',
-      'pak.li1':     'Padded envelope with the destination address (open), for the attention of <strong>{{respSaliva}}</strong>, for shipping the saliva sample.',
+      'pak.li1':     'Padded envelope for shipping the saliva sample, <strong>with the address label already attached</strong>, addressed to:<br><strong>{{respSaliva}}</strong><br>{{salivaAddr}}',
       'pak.li2':     'Cold pack (gel bag for freezing) that will keep the samples refrigerated on the return shipment. You should have received it <strong>unfrozen</strong> (at room temperature).',
       'pak.li3':     'Bubble wrap, to prevent direct contact between the samples and the frozen gel bag, and to protect the samples during shipment.',
       'pak.li4':     'Red-capped container labelled with your name and surname, for the urine sample.',
@@ -297,18 +297,21 @@
 
   // ── Engine ────────────────────────────────────────────────────────────────
 
-  // Nombres de las personas responsables. Se rellenan desde /api/config (servidor)
-  // y se inyectan en los textos mediante los marcadores {{respOrina}} / {{respSaliva}}.
-  // Los valores de aquí son sólo el respaldo si la configuración no carga.
+  // Datos configurables. Se rellenan desde /api/config (servidor) y se inyectan
+  // en los textos mediante los marcadores {{respOrina}}, {{respSaliva}} y
+  // {{salivaAddr}}. Los valores de aquí son sólo el respaldo si la configuración
+  // no carga. respSalivaAddr admite varias líneas (\n → <br> al renderizar).
   var CONFIG = {
-    respOrina:  'Joaquín Castilla',
-    respSaliva: 'Guiomar Pérez de Nanclares'
+    respOrina:      'Carol Aristimuño',
+    respSaliva:     'Guiomar Pérez de Nanclares',
+    respSalivaAddr: 'Hospital Universitario Cruces - IIS Biobizkaia\nEdificio Bio 3, 1ª planta\nPlaza de Cruces 12\nCruces - Barakaldo\n48903, Bizkaia\nTelf. +34 946006014'
   };
 
   function interpolate(str) {
     return String(str)
       .replace(/\{\{\s*respOrina\s*\}\}/g, CONFIG.respOrina)
-      .replace(/\{\{\s*respSaliva\s*\}\}/g, CONFIG.respSaliva);
+      .replace(/\{\{\s*respSaliva\s*\}\}/g, CONFIG.respSaliva)
+      .replace(/\{\{\s*salivaAddr\s*\}\}/g, String(CONFIG.respSalivaAddr).replace(/\n/g, '<br>'));
   }
 
   function loadConfig() {
@@ -317,9 +320,10 @@
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (c) {
         if (!c) return;
-        if (c.respOrina)  CONFIG.respOrina  = c.respOrina;
-        if (c.respSaliva) CONFIG.respSaliva = c.respSaliva;
-        applyLang(getLang());   // re-render con los nombres ya cargados
+        if (c.respOrina)      CONFIG.respOrina      = c.respOrina;
+        if (c.respSaliva)     CONFIG.respSaliva     = c.respSaliva;
+        if (c.respSalivaAddr) CONFIG.respSalivaAddr = c.respSalivaAddr;
+        applyLang(getLang());   // re-render con los datos ya cargados
       })
       .catch(function () { /* sin conexión: se mantienen los valores por defecto */ });
   }
