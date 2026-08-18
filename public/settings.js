@@ -23,9 +23,10 @@
       '.settings-modal h2{color:#0077b6;font-size:1.25rem;margin-bottom:6px;}' +
       '.settings-sub{color:#718096;font-size:0.85rem;line-height:1.5;margin-bottom:18px;}' +
       '.settings-modal label{display:block;font-size:0.85rem;font-weight:600;color:#2d3748;margin-bottom:14px;}' +
-      '.settings-modal input{display:block;width:100%;margin-top:6px;padding:10px 12px;font-size:0.95rem;' +
-        'font-family:inherit;border:2px solid #e2e8f0;border-radius:8px;}' +
-      '.settings-modal input:focus{outline:none;border-color:#0077b6;}' +
+      '.settings-modal input,.settings-modal textarea{display:block;width:100%;margin-top:6px;padding:10px 12px;' +
+        'font-size:0.95rem;font-family:inherit;border:2px solid #e2e8f0;border-radius:8px;}' +
+      '.settings-modal textarea{min-height:118px;resize:vertical;line-height:1.4;}' +
+      '.settings-modal input:focus,.settings-modal textarea:focus{outline:none;border-color:#0077b6;}' +
       '.settings-msg{min-height:18px;font-size:0.85rem;margin:2px 0 12px;}' +
       '.settings-msg.err{color:#c53030;}' +
       '.settings-msg.ok{color:#059669;}' +
@@ -59,6 +60,8 @@
           '<input type="text" id="set-orina" autocomplete="off"></label>' +
         '<label>Persona responsable de recibir la muestra de saliva' +
           '<input type="text" id="set-saliva" autocomplete="off"></label>' +
+        '<label>Dirección de destino del sobre de saliva (una línea por renglón)' +
+          '<textarea id="set-saliva-addr" autocomplete="off"></textarea></label>' +
         '<label>Contraseña de administración' +
           '<input type="password" id="set-pass" autocomplete="off"></label>' +
         '<div class="settings-msg" id="set-msg"></div>' +
@@ -71,6 +74,7 @@
 
     var inOrina  = overlay.querySelector('#set-orina');
     var inSaliva = overlay.querySelector('#set-saliva');
+    var inAddr   = overlay.querySelector('#set-saliva-addr');
     var inPass   = overlay.querySelector('#set-pass');
     var msg      = overlay.querySelector('#set-msg');
     var saveBtn  = overlay.querySelector('#set-save');
@@ -86,8 +90,9 @@
       fetch('/api/config')
         .then(function (r) { return r.json(); })
         .then(function (c) {
-          inOrina.value  = c.respOrina  || '';
-          inSaliva.value = c.respSaliva || '';
+          inOrina.value  = c.respOrina      || '';
+          inSaliva.value = c.respSaliva     || '';
+          inAddr.value   = c.respSalivaAddr || '';
         })
         .catch(function () { /* sin conexión */ });
       overlay.hidden = false;
@@ -101,11 +106,12 @@
 
     saveBtn.addEventListener('click', function () {
       var body = {
-        respOrina:  inOrina.value.trim(),
-        respSaliva: inSaliva.value.trim(),
-        password:   inPass.value
+        respOrina:      inOrina.value.trim(),
+        respSaliva:     inSaliva.value.trim(),
+        respSalivaAddr: inAddr.value.trim(),
+        password:       inPass.value
       };
-      if (!body.respOrina || !body.respSaliva) { showMsg('Ambos nombres son obligatorios.', true); return; }
+      if (!body.respOrina || !body.respSaliva || !body.respSalivaAddr) { showMsg('Todos los campos son obligatorios.', true); return; }
       if (!body.password) { showMsg('Introduce la contraseña.', true); return; }
 
       saveBtn.disabled = true;
