@@ -133,7 +133,7 @@
       'pak.s3':      'Lea las instrucciones para la toma de muestra de <strong>saliva, orina, l\u00e1grimas y mucosa nasal</strong> con detenimiento y planifique la toma de muestras de acuerdo con las indicaciones.',
       'pak.s3alert': '<strong>\u26a0\ufe0f Importante: planificaci\u00f3n del env\u00edo</strong> Las muestras deben enviarse <strong>al d\u00eda siguiente de su toma</strong>. No realice la toma de muestras en s\u00e1bado, ya que la recogida no podr\u00e1 hacerse en domingo. As\u00edg\u00farese adem\u00e1s de estar disponible para entregar el paquete al transportista en su domicilio al d\u00eda siguiente de la toma.',
       'pak.s4':      'Cuando haya planificado la toma de muestras, deber\u00e1 <strong>informar a Joaqu\u00edn Castilla un d\u00eda antes</strong> para que organice la recogida y env\u00ede al transportista al d\u00eda y direcci\u00f3n indicados por usted.',
-      'pak.s5':      'Una vez avisado Joaqu\u00edn Castilla y tomadas las muestras de orina (que deben <strong>conservarse refrigeradas</strong> hasta la preparaci\u00f3n del paquete), l\u00e1grima (<strong>congelar</strong> hasta su env\u00edo), mucosa nasal (<strong>conservar refrigerado</strong>) y saliva (<strong>no requiere refrigeraci\u00f3n</strong>), prepare la caja de porexp\u00e1n, a poder ser <strong>el mismo d\u00eda de la recogida</strong> o como pronto la noche anterior.',
+      'pak.s5':      'Una vez avisado Joaqu\u00edn Castilla y tomadas las muestras de orina (que deben <strong>conservarse refrigeradas</strong> hasta la preparaci\u00f3n del paquete), l\u00e1grima (<strong>congelar o conservar refrigerada</strong> hasta su env\u00edo), mucosa nasal (<strong>conservar refrigerado</strong>) y saliva (<strong>no requiere refrigeraci\u00f3n</strong>), prepare la caja de porexp\u00e1n, a poder ser <strong>el mismo d\u00eda de la recogida</strong> o como pronto la noche anterior.',
       'pak.s6intro': 'Introduzca en la caja de porexp\u00e1n blanco los siguientes elementos, <strong>en este orden</strong>:',
       'pak.s6li1':   '\ud83e\uddca Acumulador de fr\u00edo (frigol\u00edn o bolsa de gel) <strong>congelado</strong>, en el fondo.',
       'pak.s6li2':   '\ud83e\udde7 Pl\u00e1stico de burbujas, entre el acumulador de fr\u00edo y las muestras.',
@@ -146,7 +146,7 @@
 
       // ── paquete-sin-saliva.html (diferencias) ──────────
       'pss.s3':      'Lea las instrucciones para la toma de muestra de <strong>orina, l\u00e1grimas y mucosa nasal</strong> con detenimiento y planifique la toma de muestras de acuerdo con las indicaciones.',
-      'pss.s5':      'Una vez avisado Joaqu\u00edn Castilla y tomadas las muestras de orina (que deben <strong>conservarse refrigeradas</strong> hasta la preparaci\u00f3n del paquete), l\u00e1grima (<strong>congelar</strong> hasta su env\u00edo) y mucosa nasal (<strong>conservar refrigerado</strong>), prepare la caja de porexp\u00e1n, a poder ser <strong>el mismo d\u00eda de la recogida</strong> o como pronto la noche anterior.'
+      'pss.s5':      'Una vez avisado Joaqu\u00edn Castilla y tomadas las muestras de orina (que deben <strong>conservarse refrigeradas</strong> hasta la preparaci\u00f3n del paquete), l\u00e1grima (<strong>congelar o conservar refrigerada</strong> hasta su env\u00edo) y mucosa nasal (<strong>conservar refrigerado</strong>), prepare la caja de porexp\u00e1n, a poder ser <strong>el mismo d\u00eda de la recogida</strong> o como pronto la noche anterior.'
     },
     en: {
       // ── Compartidos (header / footer) ──────────────────
@@ -278,7 +278,7 @@
       'pak.s3':      'Carefully read the instructions for collecting <strong>saliva, urine, tear and nasal mucosa</strong> samples and plan your sample collection according to the guidelines.',
       'pak.s3alert': '<strong>\u26a0\ufe0f Important: scheduling the shipment</strong> Samples must be sent <strong>the day after collection</strong>. Do not collect samples on a Saturday, as pick-up cannot take place on a Sunday. Also make sure you are available to hand the package to the courier at your home the day after collection.',
       'pak.s4':      'Once you have planned your sample collection, you must <strong>notify Joaqu\u00edn Castilla one day in advance</strong> so he can arrange the pick-up and send the courier on the day and to the address you specify.',
-      'pak.s5':      'Once Joaqu\u00edn Castilla has been notified and the urine samples (which must be kept <strong>refrigerated</strong> until the package is prepared), tear samples (<strong>freeze</strong> until shipment), nasal mucosa (<strong>keep refrigerated</strong>) and saliva (<strong>no refrigeration required</strong>) have been collected, prepare the polystyrene box, ideally <strong>on the same day as collection</strong> or at the earliest the night before.',
+      'pak.s5':      'Once Joaqu\u00edn Castilla has been notified and the urine samples (which must be kept <strong>refrigerated</strong> until the package is prepared), tear samples (<strong>freeze or keep refrigerated</strong> until shipment), nasal mucosa (<strong>keep refrigerated</strong>) and saliva (<strong>no refrigeration required</strong>) have been collected, prepare the polystyrene box, ideally <strong>on the same day as collection</strong> or at the earliest the night before.',
       'pak.s6intro': 'Place the following items in the white polystyrene box, <strong>in this order</strong>:',
       'pak.s6li1':   '\ud83e\uddca Cold pack (gel bag) <strong>frozen</strong>, at the bottom.',
       'pak.s6li2':   '\ud83e\udde7 Bubble wrap, between the cold pack and the samples.',
@@ -291,7 +291,7 @@
 
       // ── paquete-sin-saliva.html (differences) ──────────
       'pss.s3':      'Carefully read the instructions for collecting <strong>urine, tear and nasal mucosa</strong> samples and plan your sample collection according to the guidelines.',
-      'pss.s5':      'Once Joaqu\u00edn Castilla has been notified and the urine samples (which must be kept <strong>refrigerated</strong> until the package is prepared), tear samples (<strong>freeze</strong> until shipment) and nasal mucosa (<strong>keep refrigerated</strong>) have been collected, prepare the polystyrene box, ideally <strong>on the same day as collection</strong> or at the earliest the night before.'
+      'pss.s5':      'Once Joaqu\u00edn Castilla has been notified and the urine samples (which must be kept <strong>refrigerated</strong> until the package is prepared), tear samples (<strong>freeze or keep refrigerated</strong> until shipment) and nasal mucosa (<strong>keep refrigerated</strong>) have been collected, prepare the polystyrene box, ideally <strong>on the same day as collection</strong> or at the earliest the night before.'
     }
   };
 
